@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <?php include("_home.php") ?>
+    <?php include("_home.php");
+    include("_about.php"); ?>
 </body>
 
 </html>

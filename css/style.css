@@ -1,6 +1,7 @@
 
 @import url(_variables.css);
-@import url(_global,css);
+@import url(_global.css);
+@import url(_about.php);
 
 @font-face {
     font-family: 'Lucky-Luke';
@@ -10,4 +11,37 @@
         url('/fonts/Lucky-Luke.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
+}
+/* Section About */
+
+body {
+    background-color: var(--secondary-color);
+}
+#About {
+    /* background: var(--secondary-color); */
+    min-height: 80vh;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lucky-Luke';
+}
+
+section #pictureLuckyLuke {
+    display: flex;
+    justify-content: center;
+}
+
+section #pictureLuckyLuke img {
+width: 250px;
+border-radius: 50%;
 }
