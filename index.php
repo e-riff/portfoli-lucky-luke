@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Lucky Luke's portfolio</title>
-    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <link rel="shortcut icon" type="image/png" href="/pictures/favicon.png">
 </head>
 
 <body>
@@ -15,6 +15,9 @@
     <?php include("_navbar.php"); ?>
     <?php include("_home.php"); ?>
 
+
+    <!-- script vers pour la navbar -->
+    <script src="/scripts/script.js"></script>
 </body>
 
 </html>

@@ -6,3 +6,23 @@
         <span></span>
     </div>
 </nav>
+
+<sidebar>
+    <ul>
+        <a href="#">
+            <li>Home</li>
+        </a>
+        <a href="#">
+            <li>A propos</li>
+        </a>
+        <a href="#">
+            <li>Parcours</li>
+        </a>
+        <a href="#">
+            <li>Compétences</li>
+        </a>
+        <a href="#">
+            <li>Contact</li>
+        </a>
+    </ul>
+</sidebar>
