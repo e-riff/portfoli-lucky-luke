@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <?php include("_home.php") ?>
 </body>
 
 </html>
