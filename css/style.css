@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: 'Lucky-Luke';
+    src:url('/fonts/Lucky-Luke.ttf.woff') format('woff'),
+        url('/fonts/Lucky-Luke.ttf.svg#Lucky-Luke') format('svg'),
+        url('/fonts/Lucky-Luke.ttf.eot'),
+        url('/fonts/Lucky-Luke.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
