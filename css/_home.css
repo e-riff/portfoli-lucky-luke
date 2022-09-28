@@ -1,24 +1,30 @@
-#home {
+section#home {
     background-image: url("/pictures/Back_main_full.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh / 3 *2);
     background-position: right bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-blockquote.bubble {
-    background-image: url(/pictures/bubble.svg);
+div.bubble {
+    background-image: url(/pictures/Bubble3.png);
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 auto;
-    height: 6rem;
-    width: 50%;
+    background-size: contain;
+    width: 55%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background-size: cover;
-    padding: 4% 6% 12% 0%;
 }
 
 /*
+//Bubble animation for desktop version
+
 .bubble:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;

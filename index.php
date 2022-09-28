@@ -12,7 +12,7 @@
 
 <body>
 
-    <?php include("_nav.php"); ?>
+    <?php include("_navbar.php"); ?>
     <?php include("_home.php"); ?>
 
 </body>
