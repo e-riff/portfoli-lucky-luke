@@ -1,4 +1,7 @@
 
+@import url(_variables.css);
+@import url(_global,css);
+
 @font-face {
     font-family: 'Lucky-Luke';
     src:url('/fonts/Lucky-Luke.ttf.woff') format('woff'),
