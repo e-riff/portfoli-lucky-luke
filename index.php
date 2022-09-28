@@ -11,7 +11,10 @@
 </head>
 
 <body>
-    <?php include("_home.php") ?>
+
+    <?php include("_nav.php"); ?>
+    <?php include("_home.php"); ?>
+
 </body>
 
 </html>
