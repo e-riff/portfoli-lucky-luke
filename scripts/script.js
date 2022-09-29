@@ -13,3 +13,12 @@ burger.addEventListener('click', function () {
     isDisplayed = !isDisplayed;
 });
 
+sidebar.addEventListener('click', function () {
+    if (!isDisplayed) {
+        sidebar.style.display = "initial";
+    }
+    else {
+        sidebar.style.display = "none";
+    }
+    isDisplayed = !isDisplayed;
+});
