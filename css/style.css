@@ -1,8 +1,11 @@
 /* CSS file import */
 @import url(_variables.css);
 @import url(_global.css);
+<<<<<<< HEAD
+=======
 @import url(_home.css);
 @import url(_navbar.css);
+>>>>>>> c68d21c86cc4d1c479b9bd23693f319d1db2f181
 
 /*fonts import*/
 @font-face {
