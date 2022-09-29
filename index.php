@@ -15,7 +15,7 @@
     <?php include("_navbar.php"); ?>
     <?php include("_home.php"); include("_about.php"); ?>
     <?php include("_skills.php"); ?>
-    <section id="pathway"><?php include("_pathway.php"); ?> </section>
+    <?php include("_pathway.php"); ?>
     <?php include("_contact.php") ?>
     <!-- script vers pour la navbar -->
     <script src="/scripts/script.js"></script>
