@@ -18,6 +18,7 @@
     <section id="pathway"><?php include("_pathway.php"); ?></section>
     <!-- script vers pour la navbar -->
     <script src="/scripts/script.js"></script>
+    <?php include("_contact.php") ?>
 </body>
 
 </html>
