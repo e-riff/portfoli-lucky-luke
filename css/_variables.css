@@ -1,4 +1,13 @@
 :root {
-    --primary-color : #260407 ;
-    --secondary-color : #f1ebc8 ;
+
+    /*Colors Variables*/
+    --primary-color: #260407;
+    --secondary-color: #f1ebc8;
+    --third-color: #731919;
+
+    /*spacing variables*/
+    --spacing: 8px;
+    --spacing-xl: calc(var(--spacing) * 2);
+
+
 }
