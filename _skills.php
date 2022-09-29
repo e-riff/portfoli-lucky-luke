@@ -17,7 +17,7 @@
         <ul class="skills-title"> <!--hard skills title-->
             <li class="skills-title-gun"></li> <!--picto -->
             <li><h3> Hard skills</h3></li>
-            <li class="skills-title-line"></li> <!--line -->
+            <li class="skills-title-line"></li> <!--line farwest -->
         </ul>
 
         <ul class="skills-details"> <!--hard skills details-->
@@ -31,7 +31,7 @@
         
 
         <ul class="skills-tools-title"> <!--tools title-->
-            <li class="skills-title-line"></li> <!--line -->
+            <li class="skills-title-line"></li> <!--line farwest -->
             <li><h3> Tools </h3></li>
             <li class="skills-tools-bullet"></li> <!--picto -->
         </ul>
