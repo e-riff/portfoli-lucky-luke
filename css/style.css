@@ -1,14 +1,21 @@
-
+/* CSS file import */
 @import url(_variables.css);
 @import url(_global.css);
 @import url(_about.php);
+@import url(_home.css);
+@import url(_navbar.css);
+@import url(_contact.css);
+@import url(_footer.css);
 
+
+
+/*fonts import*/
 @font-face {
     font-family: 'Lucky-Luke';
-    src:url('/fonts/Lucky-Luke.ttf.woff') format('woff'),
+    src: url('/fonts/Lucky-Luke.ttf.woff') format('woff'),
         url('/fonts/Lucky-Luke.ttf.svg#Lucky-Luke') format('svg'),
         url('/fonts/Lucky-Luke.ttf.eot'),
-        url('/fonts/Lucky-Luke.ttf.eot?#iefix') format('embedded-opentype'); 
+        url('/fonts/Lucky-Luke.ttf.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }

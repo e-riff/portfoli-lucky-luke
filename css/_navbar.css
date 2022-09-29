@@ -1,0 +1,43 @@
+nav.topMenu {
+    background-color: var(--secondary-color);
+    display: inline-flex;
+    padding: 0.3rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav img {
+    height: 2rem
+}
+
+nav span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin: 5px;
+    background: black;
+    border-radius: 3px;
+}
+
+sidebar {
+    display: none;
+    position: fixed;
+    top: 3rem;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background: var(--secondary-color);
+    list-style-type: none;
+}
+
+sidebar>ul {
+    position: sticky;
+    margin: var(--spacing);
+    list-style-type: none;
+}
