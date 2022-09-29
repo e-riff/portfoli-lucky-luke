@@ -43,12 +43,23 @@ h1 {
     font-family: 'Lucky-Luke';
 }
 
+p {
+    margin: 1rem;
+}
+
 section #pictureLuckyLuke {
     display: flex;
     justify-content: center;
+    margin: 1rem;
+
 }
 
 section #pictureLuckyLuke img {
 width: 250px;
 border-radius: 50%;
+}
+
+section .friendLuckyLuke img {
+    margin: 2rem;
+    width: 100px;
 }
