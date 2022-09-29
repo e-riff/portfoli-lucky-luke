@@ -12,6 +12,7 @@
 
 <body>
     <?php include("_home.php") ?>
+    <?php include("_contact.php") ?>
 </body>
 
 </html>
