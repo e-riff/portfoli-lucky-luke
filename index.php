@@ -15,7 +15,6 @@
     <?php include("_navbar.php"); ?>
     <?php include("_home.php"); ?>
 
-
     <!-- script vers pour la navbar -->
     <script src="/scripts/script.js"></script>
 </body>
