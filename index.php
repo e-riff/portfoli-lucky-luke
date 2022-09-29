@@ -11,10 +11,9 @@
 </head>
 
 <body>
-    <?php include("_home.php") ?>
     <?php include("_navbar.php"); ?>
     <?php include("_home.php"); ?>
-    <?php include("_skills.php") ?>
+    <?php include("_skills.php"); ?>
 
     <!-- script vers pour la navbar -->
     <script src="/scripts/script.js"></script>
