@@ -1,8 +1,9 @@
 /* CSS file import */
 @import url(_variables.css);
 @import url(_global.css);
-@import url(_about.php);
+@import url(_about.css);
 @import url(_home.css);
+@import url(_about.css);
 @import url(_navbar.css);
 @import url(_contact.css);
 @import url(_footer.css);
@@ -18,48 +19,4 @@
         url('/fonts/Lucky-Luke.ttf.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
-}
-/* Section About */
-
-body {
-    background-color: var(--secondary-color);
-}
-#About {
-    /* background: var(--secondary-color); */
-    min-height: 80vh;
-    width: 100%;
-}
-
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Lucky-Luke';
-}
-
-p {
-    margin: 1rem;
-}
-
-section #pictureLuckyLuke {
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-
-}
-
-section #pictureLuckyLuke img {
-width: 250px;
-border-radius: 50%;
-}
-
-section .friendLuckyLuke img {
-    margin: 2rem;
-    width: 100px;
 }

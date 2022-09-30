@@ -1,0 +1,48 @@
+/* Section About */
+
+body {
+    background-color: var(--secondary-color);
+}
+#About {
+    /* background: var(--secondary-color); */
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lucky-Luke';
+}
+
+p {
+    margin: 1rem;
+}
+
+section #pictureLuckyLuke {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+section #pictureLuckyLuke img {
+width: 250px;
+border-radius: 50%;
+}
+
+section .friendLuckyLuke {
+    display: flex;
+    justify-content: space-between;
+}
+section .friendLuckyLuke img {
+    margin:0 ;
+    width: 100px;
+    border-radius: 15%;
+    object-fit: cover;
+}
