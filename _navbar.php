@@ -15,7 +15,7 @@
         <a href="#About">
             <li>A propos</li>
         </a>
-        <a href="#">
+        <a href="#pathway">
             <li>Parcours</li>
         </a>
         <a href="#skills">

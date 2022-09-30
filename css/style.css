@@ -2,6 +2,7 @@
 @import url(_variables.css);
 @import url(_global.css);
 @import url(_navbar.css);
+
 @import url(_home.css);
 @import url(_about.css);
 @import url(_skills.css);
@@ -19,6 +20,3 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
-
