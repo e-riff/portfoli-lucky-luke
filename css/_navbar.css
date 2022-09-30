@@ -41,7 +41,7 @@ sidebar ul {
     list-style-type: none;
 }
 
-sidebar ul li {
+sidebar li {
     /* border: 3px solid black; */
     display: block;
     color: #fff;
@@ -52,9 +52,16 @@ sidebar ul li {
     margin-bottom: .5em;
     box-shadow: 1px 1px 0 #666;
     border: 3px solid var(--secondary-color);
+    text-decoration: none;
 }
 
-sidebar ul li:hover {
-    background: #f1c40f;
-    transition: background .5s;
+sidebar a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    sidebar ul li:hover {
+        background: #f1c40f;
+        transition: background .5s;
+    }
 }
