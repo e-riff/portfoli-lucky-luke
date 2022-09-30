@@ -1,56 +1,46 @@
 const burger = document.querySelector(".burger");
 const sidebar = document.querySelector("sidebar");
 
+//// Flags de l'affichage des menus ////
+let isDisplayedOnTop = false;
+let isDisplayedOnSide = false;
 
 
-let isDisplayed = false;
 
 //// Cette fonction affiche le menu latéral au clic sur le burger ////
 burger.addEventListener('click', function () {
-    if (!isDisplayed) {
+    if (!isDisplayedOnSide) {
         sidebar.style.display = "initial";
     }
     else {
         sidebar.style.display = "none";
     }
-    isDisplayed = !isDisplayed;
+    isDisplayedOnSide = !isDisplayedOnSide;
 });
 
-////cette fonction fait disparaitre le menu après un clic sur une partie///
+
+
+////cette fonction fait disparaitre le menu après un clic sur une partie////
 sidebar.addEventListener('click', function () {
     if (window.innerWidth < 768) {  //mais seulement sur petit écran (sinon la barre reste affichée)
-        if (!isDisplayed) {
+        if (!isDisplayedOnSide) {
             sidebar.style.display = "initial";
         }
         else {
             sidebar.style.display = "none";
         }
-        isDisplayed = !isDisplayed;
+        isDisplayedOnSide = !isDisplayedOnSide;
     }
 });
 
-let flag = false;
 
+
+////cette fonction fait apparaitre le menu du haut après le scroll de la première partie...////
 window.onscroll = () => {
-    if (scrollY > 600 && flag == false) {
-        sidebar.classList.toggle("hidden");
-        //sidebar.style.display = "inline.flex"
-        flag = true;
-    }
-    else if (scrollY < 600 && flag == true) {
-        // sidebar.style.display = "none"
-        sidebar.classList.toggle("hidden");
-        flag = !flag;
+    if (window.innerWidth > 768) {  //...mais seulement sur version desktop
+        if ((scrollY > 600 && !isDisplayedOnTop) || (scrollY < 600 && isDisplayedOnTop)) {
+            sidebar.classList.toggle("displaying");
+            isDisplayedOnTop = !isDisplayedOnTop;
+        }
     }
 };
-
-
-/*
-///Dealing with scroll bar///
-
-if (windows.scrollY <= 200) {
-    sidebar.style.display = "none";
-}
-else {
-    nav.className = sidebar.style.display = "initial";
-}*/

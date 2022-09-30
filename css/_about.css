@@ -3,6 +3,7 @@
 body {
     background-color: var(--secondary-color);
 }
+
 #About {
     /* background: var(--secondary-color); */
     width: 100%;
@@ -32,16 +33,17 @@ section #pictureLuckyLuke {
 }
 
 section #pictureLuckyLuke img {
-width: 250px;
-border-radius: 50%;
+    width: 250px;
+    border-radius: 50%;
 }
 
 section .friendLuckyLuke {
     display: flex;
     justify-content: space-between;
 }
+
 section .friendLuckyLuke img {
-    margin:0 ;
+    margin: 0;
     width: 100px;
     border-radius: 15%;
     object-fit: cover;
