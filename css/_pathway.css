@@ -1,0 +1,39 @@
+.container {
+    text-align: center;
+}
+.divider {
+    width: 150px;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 20px auto 20px;
+}
+.picto {
+    width: 150px;
+    height: 150px;  
+    background-image: url(/pictures/sheriff.png);
+    background-size:cover; 
+    margin-left: 100px;
+    margin-bottom: 10px;
+    
+}
+ul{
+    list-style: none;
+}
+.timeline-heading .timeline-badge {
+    background-image: url(/pictures/crosshair-target-interface.png);
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-left: 160px;
+    margin-top: 5px;
+}
+.timeline-panel {
+    background-image: url(/pictures/bubble3.png);
+    background-size: cover;
+    max-width:fit-content;
+    max-height: 100%;
+    padding-top: 60px;
+    padding-bottom: 85px;
+    margin-right: none; 
+    margin-left: none;
+}

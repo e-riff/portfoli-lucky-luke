@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>skills</title>
-    <link rel="stylesheet" href="css/_skills.css">
-</head>
-<body>
     <section id="skills">
         <ul class="skills-header"> <!--header skills block -->
             <li><img src=" "/></li> <!--picto -->
@@ -60,5 +50,3 @@
         </ul>        
 
     </section>
-</body>
-</html>

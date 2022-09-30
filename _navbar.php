@@ -9,19 +9,19 @@
 
 <sidebar>
     <ul>
-        <a href="#">
+        <a href="#home">
             <li>Home</li>
         </a>
-        <a href="#">
+        <a href="#About">
             <li>A propos</li>
         </a>
-        <a href="#">
+        <a href="#pathway">
             <li>Parcours</li>
         </a>
-        <a href="#">
+        <a href="#skills">
             <li>Compétences</li>
         </a>
-        <a href="#">
+        <a href="#contact">
             <li>Contact</li>
         </a>
     </ul>

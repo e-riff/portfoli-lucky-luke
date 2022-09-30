@@ -1,11 +1,14 @@
 /* CSS file import */
 @import url(_variables.css);
 @import url(_global.css);
-@import url(_home.css);
 @import url(_navbar.css);
+
+@import url(_home.css);
+@import url(_about.css);
+@import url(_skills.css);
 @import url(_contact.css);
 @import url(_footer.css);
-
+@import url(_pathway.css);
 
 /*fonts import*/
 @font-face {
