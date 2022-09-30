@@ -35,16 +35,21 @@ nav span {
 
 
 sidebar {
-    display: none;
     position: fixed;
     top: 3rem;
-    left: 0px;
+    left: -50%;
     width: 50%;
     height: 100%;
     background-color: var(--secondary-color);
     list-style: none;
     box-shadow: 2px 0px 4px 0 rgba(0, 0, 0, .2);
     z-index: 1;
+    transition: 1s;
+}
+
+sidebar.displayingLeft {
+    left: 0;
+    transition: 1s;
 }
 
 sidebar ul {
@@ -74,6 +79,7 @@ sidebar a {
     sidebar {
         display: inline-flex;
         opacity: 0;
+        left: 0;
         transition: .3s;
         justify-content: flex-end;
         align-items: center;

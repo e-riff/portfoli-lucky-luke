@@ -9,26 +9,14 @@ let isDisplayedOnSide = false;
 
 //// Cette fonction affiche le menu latéral au clic sur le burger ////
 burger.addEventListener('click', function () {
-    if (!isDisplayedOnSide) {
-        sidebar.style.display = "initial";
-    }
-    else {
-        sidebar.style.display = "none";
-    }
+    sidebar.classList.toggle("displayingLeft");
     isDisplayedOnSide = !isDisplayedOnSide;
 });
-
-
 
 ////cette fonction fait disparaitre le menu après un clic sur une partie////
 sidebar.addEventListener('click', function () {
     if (window.innerWidth < 768) {  //mais seulement sur petit écran (sinon la barre reste affichée)
-        if (!isDisplayedOnSide) {
-            sidebar.style.display = "initial";
-        }
-        else {
-            sidebar.style.display = "none";
-        }
+        sidebar.classList.toggle("displayingLeft");
         isDisplayedOnSide = !isDisplayedOnSide;
     }
 });

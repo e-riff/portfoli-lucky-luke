@@ -13,7 +13,8 @@
 
 <body>
     <?php include("_navbar.php"); ?>
-    <?php include("_home.php"); include("_about.php"); ?>
+    <?php include("_home.php");
+    include("_about.php"); ?>
     <?php include("_skills.php"); ?>
     <?php include("_pathway.php"); ?>
     <?php include("_contact.php") ?>

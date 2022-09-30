@@ -2,50 +2,52 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:'Courier New', Courier, monospace;    
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #skills {
-    background-color:#f1ebc8 ;
+    background-color: #f1ebc8;
 }
 
 .skills-header {
-display: flex;
-flex-direction: column;
-list-style: none;
-align-items: center;
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .skills-title {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
-    gap : 0.5rem;
-    margin: 1rem; 
+    gap: 0.5rem;
+    margin: 1rem;
 }
+
 .skills-title-line {
     background-image: url(../pictures/skills-banner.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-        }
+}
 
-.skills-title-gun{
+.skills-title-gun {
     background-image: url(../pictures/gun.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .skills-details {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap : 1rem;
+    gap: 1rem;
     margin: 2rem;
 
-    }
+}
 
 .skills-details li {
     background-color: #c35450;
@@ -53,13 +55,14 @@ justify-content: center;
     height: 100%;
     text-align: center;
     padding: 0.5rem;
-    color:#f1ebc8;
+    color: #f1ebc8;
 }
+
 .skills-tools-title {
     list-style: none;
     display: grid;
     grid-template-columns: 5fr 2fr 1fr;
-    gap : 0.5rem;
+    gap: 0.5rem;
     margin: 1rem;
 }
 
@@ -69,8 +72,8 @@ justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .skills-details {
     list-style: none;
 
 }
-
