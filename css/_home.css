@@ -30,6 +30,10 @@ h1.welcome {
 
 @media screen and (min-width: 768px) {
 
+    div.bubble {
+        width: 30%;
+    }
+
     .bubble:hover {
         animation: shake 0.5s;
         animation-iteration-count: infinite;
