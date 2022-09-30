@@ -9,6 +9,12 @@ section#home {
     align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+    section#home {
+        height: 100vh;
+    }
+}
+
 div.bubble {
     background-image: url(/pictures/Bubble4.png);
     background-position: center;
