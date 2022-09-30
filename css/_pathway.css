@@ -1,9 +1,11 @@
 * {
-     box-sizing: border-box; 
+    box-sizing: border-box;
 }
+
 li {
     display: flex;
 }
+
 .timeline-badge img {
     /* display: inline-flex;  */
     width: 2px;
