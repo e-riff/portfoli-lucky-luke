@@ -1,19 +1,21 @@
 <section id="pathway">
     <div class="container">
         <div class="picto" >
-            <img src="pictures/sheriff.png" alt="">
+            <!-- <img src="pictures/sheriff.png" alt=""> -->
         </div>
         <div class="heading">
             <h2>Parcours Professionnel</h2>
+            <div class="divider" ></div>
         </div>
             <ul class="timeline">
                 <li>
-                    <div class="timeline-badge"><img src="pictures/crosshair-target-interface.png"></div>
+                    
                     <div class="timeline-panel-container">
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h3>Daisy Town</h3>
                                 <h4 class="text-muted">Agent d'escorte du pénitencier</h4>
+                                <div class="timeline-badge"></div> 
                             </div>
                             <div class="timeline-body">
                                 <p>Transport des prisonniers</p>
@@ -24,12 +26,12 @@
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-badge"><img src="pictures/crosshair-target-interface.png"></div>
                     <div class="timeline-panel-container">
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h3>Daisy Town</h3>
                                 <h4 class="text-muted">Monteur en télécommunication</h4>
+                                <div class="timeline-badge"></div>
                             </div>
                             <div class="timeline-body">
                                 <p>Installation des poteaux du télégraphe</p>
@@ -41,12 +43,13 @@
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-badge"><img src="pictures/crosshair-target-interface.png"></div>
+                    
                     <div class="timeline-panel-container">
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h3>Pony Express</h3>
                                 <h4 class="text-muted">Chauffeur-Livreur</h4>
+                                <div class="timeline-badge"></div>
                             </div>
                             <div class="timeline-body">
                                 <p>Préparation de la tournée</p>
@@ -58,12 +61,13 @@
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-badge"><img src="pictures/crosshair-target-interface.png"></div>
+                    
                     <div class="timeline-panel-container">
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h3>Freelance</h3>
                                 <h4 class="text-muted">Conducteur de bétail</h4>
+                                <div class="timeline-badge"></div>
                             </div>
                             <div class="timeline-body">
                                 <p>Transport du bétail</p>
