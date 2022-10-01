@@ -1,11 +1,12 @@
 /* Section About */
-
 body {
     background-color: var(--secondary-color);
 }
-#About {
-    /* background: var(--secondary-color); */
-    width: 100%;
+
+
+.About {
+    margin-top: 3rem;
+
 }
 
 .container {
@@ -22,7 +23,7 @@ h1 {
 }
 
 p {
-    margin: 1rem;
+    margin-top: 1.5rem;
 }
 
 section #pictureLuckyLuke {
@@ -37,12 +38,15 @@ border-radius: 50%;
 }
 
 section .friendLuckyLuke {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 section .friendLuckyLuke img {
     margin:0 ;
-    width: 100px;
+    width: 50px;
+    height: 80px;
     border-radius: 15%;
     object-fit: cover;
 }
