@@ -26,7 +26,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-panel-container">
+                    <div class="timeline-panel-container-inverted">
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h3>Daisy Town</h3>
@@ -34,9 +34,9 @@
                                 <div class="timeline-badge"></div>
                             </div>
                             <div class="timeline-body">
-                                <p>Installation des poteaux du télégraphe</p>
+                                <p>Installation des poteaux télégraphe</p>
                                 <p>Montage des installations</p>
-                                <p>Explications du code linguistique aux clients</p>
+                                <p>Explications du code linguistique</p>
                                 
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                             <div class="timeline-body">
                                 <p>Préparation de la tournée</p>
                                 <p>Chargement du canasson</p>
-                                <p>Distribution des courriers aux particuliers et dans les PRS (Points Relais Saloon)</p>
+                                <p>Distribution du courrier et dépôt <br>des PRS (Points Relais Saloon)</p>
                                 
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                 </li>
                 <li>
                     
-                    <div class="timeline-panel-container">
+                    <div class="timeline-panel-container-inverted">
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h3>Freelance</h3>
