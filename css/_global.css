@@ -11,9 +11,11 @@ body {
 h1 {
     font-family:'Lucky-Luke';
     letter-spacing: .2rem;
+    text-align: center;
 }
 
 h2 {
     font-family:'Lucky-Luke';
     letter-spacing: .2rem;
+    text-align: center;
 }

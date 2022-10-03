@@ -3,11 +3,6 @@
   padding-top: 3rem; /* padding-top au lieu de margon-top pour gérer la couleur de fond*/
 }
 
-h2 {
-    text-align: center;
-    text-decoration: underline;    
-}
-
 .form input {
     display: inline-block;
     width: 80%;
@@ -28,6 +23,6 @@ h2 {
   .picturetrain  img{
     width: 150px;
     height: 100px;
-    margin-top: 3rem;
+    /*margin-top: 3rem;*/
     margin-left: 1rem;
    }
