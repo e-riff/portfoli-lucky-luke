@@ -14,6 +14,6 @@
     <label for="message">Tell me:</label><br>
     <textarea id="message" name="message"></textarea>
     <br><br>
-    <input type="submit" value="Submit">
+    <input type="submit" id=submitMessage value="Submit">
   </form>
 </section>

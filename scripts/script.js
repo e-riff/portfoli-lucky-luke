@@ -1,6 +1,7 @@
 const burger = document.querySelector(".burger");
 const sidebar = document.querySelector("sidebar");
 
+
 //// Flags de l'affichage des menus ////
 let isDisplayedOnTop = false;
 let isDisplayedOnSide = false;
@@ -31,4 +32,18 @@ window.onscroll = () => {
             isDisplayedOnTop = !isDisplayedOnTop;
         }
     }
+};
+
+
+
+//// Cette fonction pour le formulaire ////
+// const message = document.querySelector("#submitMessage");
+const contactForm = document.querySelector(".contactform");
+const name = document.querySelector("#name");
+
+contactForm.onsubmit = function (event) {
+    event.preventDefault();
+    const newLine = document.createElement('p');
+    contactForm.appendChild(newLine);
+    newLine.innerHTML = `Bonjour ${name.value}, votre message a bien été envoyé ! `;
 };
