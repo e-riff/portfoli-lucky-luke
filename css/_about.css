@@ -1,6 +1,6 @@
 /* Section About */
 .About {
-    margin-top: 3rem;
+    padding-top: 3rem; /* padding-top au lieu de margon-top pour gérer la couleur de fond*/
     background-color: var(--secondary-color);
 
 }

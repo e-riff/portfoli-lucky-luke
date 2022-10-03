@@ -1,11 +1,11 @@
 #pathway .container {
     text-align: center;
+    background-color: var(--secondary-color);
 }
 
 .divider {
     width: 150px;
     height: 2px;
-    background-color: var(--secondary-color);
     margin: 20px auto 20px;
 }
 

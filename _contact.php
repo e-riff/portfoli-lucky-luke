@@ -1,9 +1,9 @@
 <section id="contact">
-  <section id="picturetrain">
+  <section class="picturetrain">
     <img src="/pictures/train.png">
   </section>
 
-  <form id="contactform">
+  <form class="contactform">
     <h2>Telegramme</h2>
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name" value=" "><br>
