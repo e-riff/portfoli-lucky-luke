@@ -1,5 +1,5 @@
-<section class="About">
-    <div class="container">
+<section id="About">
+    <div class="about-container">
 <div class="description">
     <section id="pictureLuckyLuke">
         <img alt=" Photo de presentation de Lucky luke" src="/pictures/lucky_luke.png">

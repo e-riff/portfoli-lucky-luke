@@ -1,10 +1,10 @@
     <section id="skills">
+
         <ul class="skills-header">
             <!--header skills block -->
-            <li><img src=" " /></li>
-            <!--picto -->
+            <li><img src=" " /></li> <!--picto -->
             <li>
-                <h2> Compétences</h2>
+                <h2> Competences</h2>
             </li>
         </ul>
 

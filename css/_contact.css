@@ -1,15 +1,9 @@
-h2 {
-    text-align: center;
-    text-decoration: underline;
-
-
-   
-    
+#contact {
+  background-color:var(--secondary-color);
+  padding-top: 3rem; /* padding-top au lieu de margon-top pour gérer la couleur de fond*/
 }
-.contact {
-    margin-top: 3rem;
-}
-form input {
+
+.form input {
     display: inline-block;
     width: 80%;
     height: 30px;
@@ -17,7 +11,7 @@ form input {
     margin-right: 50px;
     margin-top: 20px;
   }
-  form textarea {
+  .form textarea {
     display: inline-block;
     width: 80%;
     height:100px ;
@@ -26,9 +20,9 @@ form input {
     margin-right: 50px;
   }
 
-  section #picturetrain  img{
+  .picturetrain  img{
     width: 150px;
     height: 100px;
-    margin-top: 3rem;
+    /*margin-top: 3rem;*/
     margin-left: 1rem;
    }
