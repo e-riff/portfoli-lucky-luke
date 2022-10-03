@@ -5,12 +5,12 @@
 .divider {
     width: 150px;
     height: 2px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     margin: 20px auto 20px;
 }
 
 .picto {
-     width: 150px;
+    width: 150px;
     height: 150px; 
     background-image: url(/pictures/sheriff.png);
     background-size: cover;

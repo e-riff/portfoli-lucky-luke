@@ -1,11 +1,7 @@
 /* Section About */
-body {
-    background-color: var(--secondary-color);
-}
-
-
 .About {
     margin-top: 3rem;
+    background-color: var(--secondary-color);
 
 }
 
