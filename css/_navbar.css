@@ -10,6 +10,7 @@ nav.topMenu {
     position: fixed;
     top: 0px;
     z-index: 1;
+    box-shadow: 2px 0px 4px 0 rgba(0, 0, 0, .2);
 }
 
 nav img {
@@ -84,7 +85,7 @@ sidebar a {
         justify-content: flex-end;
         align-items: center;
         position: fixed;
-        top: 0;
+        top: -3rem;
         width: 100%;
         height: 3rem;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
@@ -93,6 +94,7 @@ sidebar a {
     sidebar.displaying {
         transition: .6s;
         opacity: 1;
+        top: 0;
     }
 
     sidebar li {
