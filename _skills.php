@@ -1,7 +1,7 @@
     <section id="skills">
         <ul class="skills-header"> <!--header skills block -->
             <li><img src=" "/></li> <!--picto -->
-            <li><h2> Compétences</h2></li>
+            <li><h2> Competences</h2></li>
         </ul>
 
         <ul class="skills-title"> <!--hard skills title-->
