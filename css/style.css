@@ -14,14 +14,25 @@
 /*fonts import*/
 @font-face {
     font-family: 'Lucky-Luke';
-    src: url('/fonts/Lucky-Luke.ttf.woff') format('woff'),
-        url('/fonts/Lucky-Luke.ttf.svg#Lucky-Luke') format('svg'),
-        url('/fonts/Lucky-Luke.ttf.eot'),
-        url('/fonts/Lucky-Luke.ttf.eot?#iefix') format('embedded-opentype');
+    src: url('./fonts/Lucky-Luke.ttf.woff') format('woff'),
+        url('./fonts/Lucky-Luke.ttf.svg#Lucky-Luke') format('svg'),
+        url('./fonts/Lucky-Luke.ttf.eot'),
+        url('./fonts/Lucky-Luke.ttf.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
 
+@import url('fonts.googleapis.com/css?family=Open+Sans');
+
 * {
     scroll-behavior: smooth;
+    /*For Smooth Scrolling*/
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+h1 {
+    font-family: "Lucky-Luke";
 }
