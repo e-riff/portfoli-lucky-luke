@@ -1,54 +1,59 @@
 section#home {
+    margin-top: 3rem;
     background-image: url("/pictures/Back_main_full.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh / 3 *2);
+    height: calc(100vh - 3rem);
     background-position: right bottom;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
     section#home {
+        margin-top: initial;
         height: 100vh;
     }
 }
 
 div.welcome {
-    height: 90%;
-    width: 90%;
-    padding-top: 3rem;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
     color: var(--secondary-color);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 h1.lucky {
-    text-align: center;
     letter-spacing: 4px;
-    font-size: clamp(1rem, 6rem, 10rem);
+    font-size: clamp(4rem, 25vw, 25vh);
     font-weight: 800;
     color: var(--secondary-color);
     overflow-wrap: normal;
-    text-shadow: black 4px 4px 8px;
+    text-shadow: black 0.1rem 0.1rem 0.1rem;
 }
 
 h2.poor {
-    background-image: url(/pictures/Bubble4.png);
+    /* background-image: url(/pictures/Bubble4.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 50%;
-    text-align: center;
-    font-size: clamp(.5rem, 1rem, 200px);
-    ;
+    height: 40%;
+    margin: 1rem; */
+    margin: 0 auto;
 }
-
-
 
 /*Bubble animation for desktop version*/
 
 @media screen and (min-width: 768px) {
+    div.welcome {
+        justify-content: space-evenly;
+    }
+
+    /*  h1.lucky {
+        max-width:
+    } */
 
     /*h2.poor {
     text-align: center;
