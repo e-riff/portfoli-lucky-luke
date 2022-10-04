@@ -1,15 +1,10 @@
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;     
-*/
-
-#skills {
+.skills-container {
     /*background-color:var(--secondary-color);*/
     background-color: #c35450;
     padding-top: 3rem;
-    box-sizing: border-box;
+    padding-bottom: 1rem;
 }
+
 
 .skills-header {
     display: flex;
@@ -17,7 +12,6 @@
     list-style: none;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
     color: #f1ebc8;
 }
 
@@ -26,13 +20,22 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 20vh;
+    width: 20vw;
     height: 20vh;
     margin-bottom: 1rem;
 }
 
 
 @media screen and (min-width: 768px) {
+
+    .skills-container {
+        /*background-color:var(--secondary-color);*/
+        background-color: #c35450;
+        height: calc(100vh - 3rem);
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
     .skills-header {
         display: flex;
         flex-direction: row;
@@ -82,7 +85,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 8vh;
+    width: 8vw;
     height: 8vh;
 }
 
@@ -149,7 +152,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 8vh;
+    width: 8vw;
     height: 8vh;
 }
 
@@ -163,7 +166,9 @@
     .skills-desktop {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         align-items: center;
+        justify-content: center;
         gap: 2rem;
     }
 
@@ -172,8 +177,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        width: 60vh;
-        height: 25vh;
+        height: 65%;
         filter: drop-shadow(0 0 0.75rem rgb(126, 124, 125));
     }
 
