@@ -1,9 +1,11 @@
 
 footer{
-    background-color: #D98162;
-    height: 40px;
+background-color:#f1ebc8;
+    height: 50px;
 }
 
 p{
     text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
