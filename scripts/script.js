@@ -12,11 +12,6 @@ const isDisplayed = {
 };
 
 
-/* let isDisplayedOnTop = false;
-let isDisplayedOnSide = false; */
-
-
-
 //// Cette fonction affiche le menu latéral au clic sur le burger ////
 burger.addEventListener('click', function () {
     sidebar.classList.toggle("displayingLeft");
@@ -84,10 +79,6 @@ update();
 
 
 
-
-
-/*
-
 //// Cette fonction pour le formulaire ////
 const contactForm = document.querySelector(".contactform");
 const name = document.querySelector("#name");
@@ -96,12 +87,10 @@ contactForm.onsubmit = function (event) {
     event.preventDefault();
     const newLine = document.createElement('p');
     contactForm.appendChild(newLine);
-    newLine.innerHTML = `Bonjour ${ name.value }, votre message a bien été envoyé! `;
+    newLine.innerHTML = `Bonjour ${name.value}, votre message a bien été envoyé! `;
     newLine.classList.add("reply");
 
     setTimeout(function () {
         newLine.remove();
     }, 3000);
 };
-
-*/
