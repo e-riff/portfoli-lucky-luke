@@ -1,30 +1,20 @@
 /* Section About */
-body {
+#About {
+    padding-top: 3rem; /* padding-top au lieu de margon-top pour gérer la couleur de fond*/
     background-color: var(--secondary-color);
 }
 
-
-.About {
-    margin-top: 3rem;
-
-}
-
-.container {
-    width: 100%;
+.about-container {
+    /*width: 100%;*/
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
 
-h1 {
-    text-align: center;
-    font-family: 'Lucky-Luke';
-}
-
-p {
+/*.about-container p {
     margin-top: 1.5rem;
-}
+}*/
 
 section #pictureLuckyLuke {
     display: flex;
@@ -39,7 +29,7 @@ section #pictureLuckyLuke img {
 
 section .friendLuckyLuke {
     margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem; /*padding plutôt que margin sinon pb avec couleur de fond*/
     display: flex;
     justify-content: space-around;
 }

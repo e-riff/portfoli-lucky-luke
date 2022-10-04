@@ -1,44 +1,82 @@
-.container {
+#pathway {
     text-align: center;
+    background-color: var(--secondary-color);
+    padding-top:3rem;    
 }
 
-.divider {
+/*.divider {
     width: 150px;
     height: 2px;
-    background-color: var(--primary-color);
     margin: 20px auto 20px;
+}*/
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:1.5rem;
+    
 }
-
 .picto {
     width: 150px;
-    height: 150px;
+    height: 150px; 
     background-image: url(/pictures/sheriff.png);
     background-size: cover;
-    margin-left: 100px;
-    margin-bottom: 10px;
-
+    background-repeat: no-repeat;
+    margin-left: 32%;
+    margin-bottom: 10px; 
 }
 
-ul {
+#pathway ul {
     list-style: none;
+    text-align: center;
+    display: grid;
+    /*grid-template-rows: 350px 350px 350px 350px;*/
+    grid-template-rows : 1fr 1fr 1fr 1fr;
+    /*grid-gap: 120px;*/
+    grid-gap: 1rem;
+    /*width: auto;*/
+    /*margin-bottom: 30px;*/
+    margin:1rem;
 }
+
 
 .timeline-heading .timeline-badge {
     background-image: url(/pictures/crosshair-target-interface.png);
     background-size: contain;
+    background-repeat: no-repeat;
     width: 35px;
     height: 35px;
-    margin-left: 160px;
-    margin-top: 5px;
+    margin-left: 190px;
+    margin-top: 5px; 
 }
 
 .timeline-panel {
-    background-image: url(/pictures/bubble3.png);
-    background-size: cover;
-    max-width: fit-content;
     max-height: 100%;
     padding-top: 60px;
-    padding-bottom: 85px;
-    margin-right: none;
-    margin-left: none;
+    padding-bottom: 155px; 
+    font-size: small;  
+    
+}
+.timeline-panel-container {
+   
+    background-image: url(/pictures/chat-balloon.png);
+    background-size: cover; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*height:fit-content;*/
+    /*width: 400px;*/ 
+}
+.timeline-panel-container-inverted {
+    
+    background-image: url(/pictures/chat-balloon-inverted.png);
+    background-position: revert;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*height:fit-content;*/
+    /*width: 400px;*/ 
+}
+.timeline-body {
+     line-height: 13px;
+     margin-top: -2px;
 }
