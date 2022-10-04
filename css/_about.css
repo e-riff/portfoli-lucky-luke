@@ -6,38 +6,119 @@
 
 .about-container {
     /*width: 100%;*/
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
 }
+
+.pictureLuckyLuke {
+    background-image: url(../pictures/lucky_luke.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position:center;
+width: 100vw;
+height: 25vh; 
+margin-bottom: 2rem;   
+}
+
+.about-container h2 {
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+.about-container p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 2.5rem;
+}
+
+div .friendLuckyLuke { 
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+div .friendLuckyLuke img {
+    width: 25%;
+    height: 25%;
+} 
 
 /*.about-container p {
     margin-top: 1.5rem;
 }*/
 
-section #pictureLuckyLuke {
+/* section #pictureLuckyLuke {
     display: flex;
     justify-content: center;
     margin: 1rem;
-}
-
-section #pictureLuckyLuke img {
-    width: 250px;
-    border-radius: 50%;
-}
-
-section .friendLuckyLuke {
+/* } */
+/* section .friendLuckyLuke {
     margin-top: 1.5rem;
     padding-bottom: 1rem; /*padding plutôt que margin sinon pb avec couleur de fond*/
     display: flex;
-    justify-content: space-around;
-}
+    /* justify-content: space-around;
+}  */
 
-section .friendLuckyLuke img {
+/* section .friendLuckyLuke img {
     margin:0 ;
     width: 50px;
     height: 80px;
     border-radius: 15%;
     object-fit: cover;
-}
+} */ 
+
+@media screen and (min-width: 768px) {
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+
+    }
+    .desktop_description {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        padding-right: 6rem;
+        padding-left: 3rem;
+        max-width: 50%;
+        
+    }
+    .pictureLuckyLuke {
+        background-image: url(../pictures/lucky_luke.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    width: 35vw;
+    height: 60vh;
+    margin-bottom: 1rem;
+        
+    }
+    .desktop_description p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: left;
+    }
+
+    .desktop_description h2 {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    div .friendLuckyLuke { 
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-end;
+        
+    }
+
+    div .friendLuckyLuke img {
+        width: 30%;
+        height: 30%;
+    } 
+} 
