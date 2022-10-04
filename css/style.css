@@ -21,7 +21,11 @@
     font-weight: normal;
     font-style: normal;
 }
+h1 {
+    font font-family: 'Lucky-Luke'
+     url('/fonts/Lucky-Luke.ttf.woff');
 
+}
 * {
     scroll-behavior: smooth;
 }
