@@ -14,7 +14,6 @@
     <img alt="rantanplan" src="/pictures/rantanplan.png">
     <img alt="joedalton" src="/pictures/joe_dalton.png">
 
-
         </div>
     </div>
 </section>
