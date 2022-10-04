@@ -10,6 +10,7 @@ const isDisplayed = {
     about: false,
     pathway: false,
     skills: false,
+    contact: false,
 };
 
 
@@ -44,6 +45,10 @@ function update() {
     const skills = document.querySelector('#skills');
     const posSkills = skills.getBoundingClientRect();
 
+    //Verification de l'emplacement de la section contact
+    const contact = document.querySelector('#contact');
+    const posContact = contact.getBoundingClientRect();
+
     //J'affiche le menu si j'arrive à la section about, avec une couleur associée
     if (posAbout.top < 100 && !isDisplayed.barOnTop || posAbout.top > 100 && isDisplayed.barOnTop) {
         sidebar.classList.toggle("displaying");
@@ -69,10 +74,23 @@ function update() {
         isDisplayed.pathway = true;
         sidebar.style.backgroundColor = "green";
     }
-    else if (posSkills.top < 100 && !isDisplayed.skills) {
-        isDisplayed.pathway = false;
+
+    else if ((posSkills.top < 100 && isDisplayed.pathway || posSkills.bottom > 100 && isDisplayed.contact) && !isDisplayed.skills) {
+        if (isDisplayed.pathway) {
+            isDisplayed.pathway = false;
+        }
+        else if (isDisplayed.contact) {
+            isDisplayed.contact = false;
+        }
+        ;
         isDisplayed.skills = true;
         sidebar.style.backgroundColor = "#c35450";
+    }
+
+    else if ((posContact.top < 100 && isDisplayed.skills) && !isDisplayed.contact) {
+        isDisplayed.skills = false;
+        isDisplayed.contact = true;
+        sidebar.style.backgroundColor = "var(--secondary-color)";
     }
 }
 
