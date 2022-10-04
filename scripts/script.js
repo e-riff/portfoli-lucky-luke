@@ -1,5 +1,6 @@
 const burger = document.querySelector(".burger");
 const sidebar = document.querySelector("sidebar");
+const sidebarOnScreen = document.querySelector(".displaying");
 
 
 //// Flags de l'affichage des menus ////
@@ -28,50 +29,52 @@ sidebar.addEventListener('click', function () {
 
 
 
+
 function update() {
-    //Verification de l'emplacement de la section about
-    const about = document.querySelector('#About');
-    const posAbout = about.getBoundingClientRect();
+    if (window.innerWidth > 768) {
+        //Verification de l'emplacement de la section about
+        const about = document.querySelector('#About');
+        const posAbout = about.getBoundingClientRect();
 
-    //Verification de l'emplacement de la section pathway
-    const pathway = document.querySelector('#pathway');
-    const posPathway = pathway.getBoundingClientRect();
+        //Verification de l'emplacement de la section pathway
+        const pathway = document.querySelector('#pathway');
+        const posPathway = pathway.getBoundingClientRect();
 
-    //Verification de l'emplacement de la section skills
-    const skills = document.querySelector('#skills');
-    const posSkills = skills.getBoundingClientRect();
+        //Verification de l'emplacement de la section skills
+        const skills = document.querySelector('#skills');
+        const posSkills = skills.getBoundingClientRect();
 
-    //J'affiche le menu si j'arrive à la section about, avec une couleur associée
-    if (posAbout.top < 100 && !isDisplayed.barOnTop || posAbout.top > 100 && isDisplayed.barOnTop) {
-        sidebar.classList.toggle("displaying");
-        sidebar.style.backgroundColor = "var(--secondary-color)";
-        isDisplayed.barOnTop = !isDisplayed.barOnTop;
-        isDisplayed.about = !isDisplayed.about;
-    }
-
-    else if (posAbout.bottom > 100 && isDisplayed.pathway && !isDisplayed.about) {
-        sidebar.style.backgroundColor = "var(--secondary-color)";
-        isDisplayed.about = true;
-        isDisplayed.pathway = false;
-    }
-
-    else if ((posPathway.top < 100 && isDisplayed.about || posPathway.bottom > 100 && isDisplayed.skills) && !isDisplayed.pathway) {
-        if (isDisplayed.skills) {
-            isDisplayed.skills = false;
+        //J'affiche le menu si j'arrive à la section about, avec une couleur associée
+        if (posAbout.top < 100 && !isDisplayed.barOnTop || posAbout.top > 100 && isDisplayed.barOnTop) {
+            sidebar.classList.toggle("displaying");
+            sidebar.style.backgroundColor = "var(--secondary-color)";
+            isDisplayed.barOnTop = !isDisplayed.barOnTop;
+            isDisplayed.about = !isDisplayed.about;
         }
-        else if (isDisplayed.about) {
-            isDisplayed.about = false;
-        }
-        ;
-        isDisplayed.pathway = true;
-        sidebar.style.backgroundColor = "green";
-    }
-    else if (posSkills.top < 100 && isDisplayed.pathway && !isDisplayed.skills) {
-        isDisplayed.pathway = false;
-        isDisplayed.skills = true;
-        sidebar.style.backgroundColor = "#c35450";
-    }
 
+        else if (posAbout.bottom > 100 && isDisplayed.pathway && !isDisplayed.about) {
+            sidebar.style.backgroundColor = "var(--secondary-color)";
+            isDisplayed.about = true;
+            isDisplayed.pathway = false;
+        }
+
+        else if ((posPathway.top < 100 && isDisplayed.about || posPathway.bottom > 100 && isDisplayed.skills) && !isDisplayed.pathway) {
+            if (isDisplayed.skills) {
+                isDisplayed.skills = false;
+            }
+            else if (isDisplayed.about) {
+                isDisplayed.about = false;
+            }
+            ;
+            isDisplayed.pathway = true;
+            sidebar.style.backgroundColor = "green";
+        }
+        else if (posSkills.top < 100 && isDisplayed.pathway && !isDisplayed.skills) {
+            isDisplayed.pathway = false;
+            isDisplayed.skills = true;
+            sidebar.style.backgroundColor = "#c35450";
+        }
+    }
 }
 
 document.addEventListener('scroll', update);
