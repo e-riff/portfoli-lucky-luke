@@ -5,9 +5,10 @@
 */
 
 #skills {
-    background-color:var(--secondary-color);
+    /*background-color:var(--secondary-color);*/
+    background-color: #c35450;
     padding-top: 3rem ;
-    box-sizing: border-box;    
+    box-sizing: border-box;       
 }
 
 .skills-header {
@@ -16,21 +17,59 @@
     list-style: none;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
+    color: #f1ebc8;
 }
 
+.skills-header-picto {
+    background-image: url(../pictures/sheriff.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:20vh;
+    height:20vh;
+    margin-bottom:1rem;    
+}
+
+
+@media screen and (min-width: 768px) {
+    .skills-header {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items:center;
+        justify-content:center;        
+    }
+    .skills-header h2 {
+        font-size : 2rem;
+    }
+    .skills-title h3 {
+        font-size : 2rem;
+    }
+    .skills-tools-title h3 {
+        font-size : 2rem;
+    }
+    .skills-details li {
+        font-size : 1rem;
+        }
+    }
 .skills-title {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
     gap: 0.5rem;
     margin: 1rem;
+    text-align: center;
+    color: #f1ebc8;
+    font-size: 1.5rem;
 }
+
 
 .skills-title-line {
     background-image: url(../pictures/skills-banner.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;    
 }
 
 .skills-title-gun {
@@ -38,7 +77,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
+    width:8vh;
+    height:8vh;
+    }
 
 .skills-details {
     list-style: none;
@@ -47,34 +88,91 @@
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
     margin: 2rem;
-
-}
+   }
+.soft-skills-details {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    margin: 2rem;
+    padding-bottom: 2rem;
+       }
 
 .skills-details li {
-    background-color: #c35450;
+    background-color: #f1ebc8;
     border-radius: 50% 20% / 10% 40%;
     height: 100%;
+    padding: 0.5rem;
+    color: #731919;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        
+}
+.soft-skills-details li {
+    background-color: #731919;
+    border-radius: 5px 20px 5px;
+    height: 100%;
     padding: 0.5rem;
     color: #f1ebc8;
-}
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   }
 
 .skills-tools-title {
     list-style: none;
     display: grid;
-    grid-template-columns: 5fr 2fr 1fr;
+    grid-template-columns: 3fr 2fr 2fr;
     gap: 0.5rem;
     margin: 1rem;
-}
+    text-align: center;
+    color: #f1ebc8;
+    font-size: 1.5rem;
+    font-weight: bold;
+    }
 
 .skills-tools-bullet {
     background-image: url(../pictures/tools-bullet.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    width:8vh;
+    height:8vh;
 }
 
 .skills-details {
     list-style: none;
 
+}
+
+
+@media screen and (min-width: 768px) {
+    .skills-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;    
+    gap: 2rem;
+    }
+    .skills-picture {
+    background-image: url(../pictures/lucky-ombre.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60vh;
+    height: 25vh;
+    filter: drop-shadow(0 0 0.75rem rgb(126, 124, 125));
+        }
+    .skills-desktop-hard-skills {
+    box-shadow: 5px 0 5px -5px #333; 
+    }
+    .skills-desktop-soft-skills {
+    box-shadow: 5px 0 5px -5px #333; 
+    }
+   
 }
