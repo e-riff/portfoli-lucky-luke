@@ -20,14 +20,89 @@ div.welcome {
     width: 90%;
     padding-top: 3rem;
     color: var(--secondary-color);
+    display: block;
 }
 
 h1.lucky {
     text-align: center;
     letter-spacing: 4px;
-    font-size: clamp(10px, 10rem, 10rem);
+    font-size: clamp(1rem, 6rem, 10rem);
     font-weight: 800;
     color: var(--secondary-color);
     overflow-wrap: normal;
     text-shadow: black 4px 4px 8px;
+}
+
+h2.poor {
+    background-image: url(/pictures/Bubble4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50%;
+    text-align: center;
+    font-size: clamp(.5rem, 1rem, 200px);
+    ;
+}
+
+
+
+/*Bubble animation for desktop version*/
+
+@media screen and (min-width: 768px) {
+
+    /*h2.poor {
+    text-align: center;
+    font-size: 1rem;
+    }*/
+
+    .poor:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+
+        80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
 }
