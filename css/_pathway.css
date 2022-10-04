@@ -4,11 +4,11 @@
     padding-top:3rem;    
 }
 
-/*.divider {
-    width: 150px;
-    height: 2px;
-    margin: 20px auto 20px;
-}*/
+.divider {
+    width: 9.375rem;
+    height: 0.125rem;
+    margin: 1.25rem auto 1.25rem;
+}
 .heading {
     display: flex;
     flex-direction: column;
@@ -18,25 +18,21 @@
     
 }
 .picto {
-    width: 150px;
-    height: 150px; 
+    width: 9.375rem;
+    height: 9.375rem; 
     background-image: url(/pictures/sheriff.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 32%;
-    margin-bottom: 10px; 
+    margin-bottom: 0.625rem; 
 }
 
 #pathway ul {
     list-style: none;
     text-align: center;
     display: grid;
-    /*grid-template-rows: 350px 350px 350px 350px;*/
     grid-template-rows : 1fr 1fr 1fr 1fr;
-    /*grid-gap: 120px;*/
     grid-gap: 1rem;
-    /*width: auto;*/
-    /*margin-bottom: 30px;*/
     margin:1rem;
 }
 
@@ -45,16 +41,16 @@
     background-image: url(/pictures/crosshair-target-interface.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
-    margin-left: 190px;
-    margin-top: 5px; 
+    width: 2.188rem;
+    height: 2.188rem;
+    margin-left: 10rem;
+    margin-top: 0.313rem; 
 }
 
 .timeline-panel {
     max-height: 100%;
-    padding-top: 60px;
-    padding-bottom: 155px; 
+    padding-top: 3.75rem;
+    padding-bottom: 9.688rem; 
     font-size: small;  
     
 }
@@ -64,8 +60,7 @@
     background-size: cover; 
     background-size: contain;
     background-repeat: no-repeat;
-    /*height:fit-content;*/
-    /*width: 400px;*/ 
+    
 }
 .timeline-panel-container-inverted {
     
@@ -73,10 +68,9 @@
     background-position: revert;
     background-size: contain;
     background-repeat: no-repeat;
-    /*height:fit-content;*/
-    /*width: 400px;*/ 
+    
 }
 .timeline-body {
-     line-height: 13px;
-     margin-top: -2px;
+     line-height: 0.813rem;
+     margin-top: -0.125rem;
 }
