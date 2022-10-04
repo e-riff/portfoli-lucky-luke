@@ -10,6 +10,7 @@ const isDisplayed = {
     about: false,
     pathway: false,
     skills: false,
+    mobile: true,
 };
 
 
@@ -29,9 +30,20 @@ sidebar.addEventListener('click', function () {
 
 
 
-
+//// Cette fonction affiche (ou non) le menu du haut, et met à jour la couleur ////
 function update() {
-    if (window.innerWidth > 768) {
+
+    if (window.innerWidth < 768) {
+        if (isDisplayed.mobile === false) {
+            sidebar.style.backgroundColor = "var(--secondary-color)";
+            isDisplayed.mobile = !isDisplayed.mobile;
+        }
+        else {
+            isDisplayed.mobile = !isDisplayed.mobile;
+        }
+    }
+
+    else {
         //Verification de l'emplacement de la section about
         const about = document.querySelector('#About');
         const posAbout = about.getBoundingClientRect();
@@ -69,7 +81,7 @@ function update() {
             isDisplayed.pathway = true;
             sidebar.style.backgroundColor = "green";
         }
-        else if (posSkills.top < 100 && isDisplayed.pathway && !isDisplayed.skills) {
+        else if (posSkills.top < 100 && !isDisplayed.skills) {
             isDisplayed.pathway = false;
             isDisplayed.skills = true;
             sidebar.style.backgroundColor = "#c35450";
@@ -77,9 +89,9 @@ function update() {
     }
 }
 
+
 document.addEventListener('scroll', update);
 update();
-
 
 
 //// Cette fonction pour le formulaire ////
