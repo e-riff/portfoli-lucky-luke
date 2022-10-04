@@ -46,4 +46,9 @@ contactForm.onsubmit = function (event) {
     const newLine = document.createElement('p');
     contactForm.appendChild(newLine);
     newLine.innerHTML = `Bonjour ${name.value}, votre message a bien été envoyé ! `;
+    newLine.classList.add("reply");
+
+    setTimeout(function () {
+        newLine.remove();
+    }, 3000);
 };
