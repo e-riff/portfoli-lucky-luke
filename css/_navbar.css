@@ -95,6 +95,7 @@ sidebar a {
         transition: .6s;
         opacity: 1;
         top: 0;
+        background-color: var(--secondary-color);
     }
 
     sidebar li {
