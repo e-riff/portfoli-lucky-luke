@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Lucky Luke's portfolio</title>
     <link rel="shortcut icon" type="image/png" href="/pictures/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>

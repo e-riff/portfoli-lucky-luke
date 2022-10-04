@@ -53,14 +53,27 @@ function update() {
         isDisplayed.barOnTop = !isDisplayed.barOnTop;
         isDisplayed.about = !isDisplayed.about;
     }
-    else if (posPathway.top < 100 && isDisplayed.about || posPathway.bottom > 100 && isDisplayed.skills) {
-        isDisplayed.about = !isDisplayed.about;
-        isDisplayed.pathway = !isDisplayed.pathway;
+
+    else if (posAbout.bottom > 100 && isDisplayed.pathway && !isDisplayed.about) {
+        sidebar.style.backgroundColor = "var(--secondary-color)";
+        isDisplayed.about = true;
+        isDisplayed.pathway = false;
+    }
+
+    else if ((posPathway.top < 100 && isDisplayed.about || posPathway.bottom > 100 && isDisplayed.skills) && !isDisplayed.pathway) {
+        if (isDisplayed.skills) {
+            isDisplayed.skills = false;
+        }
+        else if (isDisplayed.about) {
+            isDisplayed.about = false;
+        }
+        ;
+        isDisplayed.pathway = true;
         sidebar.style.backgroundColor = "green";
     }
-    else if (posSkills.top < 100 && isDisplayed.pathway) {
-        isDisplayed.pathway = !isDisplayed.pathway;
-        isDisplayed.skills = !isDisplayed.skills;
+    else if (posSkills.top < 100 && isDisplayed.pathway && !isDisplayed.skills) {
+        isDisplayed.pathway = false;
+        isDisplayed.skills = true;
         sidebar.style.backgroundColor = "#c35450";
     }
 
