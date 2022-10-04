@@ -17,15 +17,16 @@ input {
 
 }
 
- textarea {
+textarea {
   display: inline-block;
   width: 75%;
   height: 80px;
   margin-top: 20px;
   margin-left: 3rem;
   margin-right: 3rem;
-  
+
 }
+
 input[type=submit] {
   display: inline-block;
   width: 25%;
@@ -43,13 +44,14 @@ input[type=submit] {
   height: 150px;
   margin-left: 4rem;
   /*margin-top: 3rem;*/
-  
+
 }
 
 .reply {
   text-align: start;
 }
-h2 {
+
+.contactform h2 {
   text-decoration: underline;
   margin-bottom: 2rem;
 }

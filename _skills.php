@@ -73,7 +73,8 @@
                         <li> Aussi humble que courageux </li>
                     </ul>
                 </div>
-                <div class="skills-picture"></div>
-                <div>
+                <div class="skills-picture">
                 </div>
+            </div>
+        </div>
     </section>
