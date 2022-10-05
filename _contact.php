@@ -2,12 +2,16 @@
   <section class="picturetrain">
     <img src="/pictures/trainvapeur.png">
 
-  <form class="contactform">
+  <form id="contactform">
     <h2>Telegramme</h2>
-    <input type="text" id="name" name="name" value=" name "><br>
-    <input type="email" id="email" name="email" value=" @ email"><br>
-    <input type="text" id="Cie" Cie="Cie" value=" Cie"><br>
-    <textarea placeholder=" Tell me"></textarea>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="Email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="Cie">Cie:</label><br>
+    <input type="text" id="Cie" Cie="Cie"><br>
+    <label for="message">Tell me:</label><br>
+    <textarea ></textarea>
     <br><br>
     <input type="submit" id=submitMessage value="Submit">
   </form>
