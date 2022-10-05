@@ -1,6 +1,6 @@
 section#home {
     margin-top: 3rem;
-    background-image: url("/pictures/Back_main_full.jpg");
+    background-image: url("/pictures/Back_main_full.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 3rem);
