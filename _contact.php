@@ -1,6 +1,5 @@
 <section id="contact">
-  <section class="picturetrain">
-    <img src="/pictures/trainvapeur.png">
+  <img class="pictureTrain" src="/pictures/trainvapeur.png">
 
   <form id="contactform">
     <h2>Telegramme</h2>
@@ -11,7 +10,7 @@
     <label for="Cie">Cie:</label><br>
     <input type="text" id="Cie" Cie="Cie"><br>
     <label for="message">Tell me:</label><br>
-    <textarea ></textarea>
+    <textarea></textarea>
     <br><br>
     <input type="submit" id=submitMessage value="Submit">
   </form>

@@ -43,7 +43,7 @@ input[type=submit] {
   color: aliceblue;
 }
 
-.picturetrain img {
+img.pictureTrain {
   width: 250px;
   height: 150px;
   margin-left: 4rem;
