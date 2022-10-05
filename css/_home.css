@@ -10,7 +10,7 @@ section#home {
 @media screen and (min-width: 768px) {
     section#home {
         margin-top: initial;
-        height: 100vh;
+        min-height: 100vh;
     }
 }
 

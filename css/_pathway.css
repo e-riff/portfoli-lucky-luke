@@ -8,6 +8,7 @@
         background-color: var(--fiveth-color);
         padding-top: 3rem;
     }
+
     .heading {
         display: flex;
         flex-direction: column;
@@ -44,13 +45,15 @@
         width: 2.188rem;
         height: 2.188rem;
         margin-left: auto;
-        margin-right: auto; 
+        margin-right: auto;
         margin-top: 0.313rem;
     }
+
     .timeline-body p {
         padding-top: 1rem;
         padding-bottom: 0rem;
     }
+
     .timeline-panel {
         max-height: 100%;
         padding-top: 3.75rem;
@@ -103,7 +106,7 @@
         margin-right: auto;
         width: 11.3rem;
         height: 11.3rem;
-        background-image: url(/pictures/sheriff.png); 
+        background-image: url(/pictures/sheriff.png);
         background-size: cover;
         background-size: contain;
         background-repeat: no-repeat;
@@ -164,7 +167,6 @@
         border: 2px solid var(--primary-color);
         border-radius: 30px;
         margin-top: 5rem;
-        height: 10rem;
         min-height: 10rem;
         min-width: 20rem;
     }
@@ -173,5 +175,6 @@
         margin-top: 1rem;
         padding-top: 0.2rem;
         padding-bottom: 0rem;
+        text-align: center;
     }
 }
