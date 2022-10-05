@@ -54,10 +54,6 @@
         justify-content: space-around;
         flex-direction: row-reverse;
         min-height: calc(100-3rem);
-<<<<<<< HEAD
-
-=======
->>>>>>> 789baded353a596d379b16fd738fede2c74548fb
     }
 
     .desktop_description {
@@ -95,10 +91,6 @@
     }
 
     div.friendLuckyLuke {
-<<<<<<< HEAD
-        height: ;
-=======
->>>>>>> 789baded353a596d379b16fd738fede2c74548fb
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
