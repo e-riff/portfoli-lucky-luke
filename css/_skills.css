@@ -25,8 +25,8 @@
 @media screen and (min-width: 768px) {
 
     .skills-container {
-        background-color: #c35450;
-        height: calc(100vh - 3rem);
+        background-color: var(--fourth-color);
+        min-height: calc(100vh - 3rem);
     }
 
     .skills-header {

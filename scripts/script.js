@@ -72,7 +72,7 @@ function update() {
         }
         ;
         isDisplayed.pathway = true;
-        sidebar.style.backgroundColor = "green";
+        sidebar.style.backgroundColor = "var(--fiveth-color)";
     }
 
     else if ((posSkills.top < 100 && isDisplayed.pathway || posSkills.bottom > 100 && isDisplayed.contact) && !isDisplayed.skills) {
@@ -84,7 +84,7 @@ function update() {
         }
         ;
         isDisplayed.skills = true;
-        sidebar.style.backgroundColor = "#c35450";
+        sidebar.style.backgroundColor = "var(--fourth-color)";
     }
 
     else if ((posContact.top < 100 && isDisplayed.skills) && !isDisplayed.contact) {
