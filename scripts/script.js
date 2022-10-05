@@ -10,7 +10,7 @@ const isDisplayed = {
     about: false,
     pathway: false,
     skills: false,
-    mobile: true,
+    contact: false,
 };
 
 
@@ -33,65 +33,71 @@ sidebar.addEventListener('click', function () {
 //// Cette fonction affiche (ou non) le menu du haut, et met à jour la couleur ////
 function update() {
 
-    if (window.innerWidth < 768) {
-        if (isDisplayed.mobile === false) {
-            sidebar.style.backgroundColor = "var(--secondary-color)";
-            isDisplayed.mobile = !isDisplayed.mobile;
-        }
-        else {
-            isDisplayed.mobile = !isDisplayed.mobile;
-        }
+    //Verification de l'emplacement de la section about
+    const about = document.querySelector('#About');
+    const posAbout = about.getBoundingClientRect();
+
+    //Verification de l'emplacement de la section pathway
+    const pathway = document.querySelector('#pathway');
+    const posPathway = pathway.getBoundingClientRect();
+
+    //Verification de l'emplacement de la section skills
+    const skills = document.querySelector('#skills');
+    const posSkills = skills.getBoundingClientRect();
+
+    //Verification de l'emplacement de la section contact
+    const contact = document.querySelector('#contact');
+    const posContact = contact.getBoundingClientRect();
+
+    //J'affiche le menu si j'arrive à la section about, avec une couleur associée
+    if (posAbout.top < 100 && !isDisplayed.barOnTop || posAbout.top > 100 && isDisplayed.barOnTop) {
+        sidebar.classList.toggle("displaying");
+        sidebar.style.backgroundColor = "var(--secondary-color)";
+        isDisplayed.barOnTop = !isDisplayed.barOnTop;
+        isDisplayed.about = !isDisplayed.about;
     }
 
-    else {
-        //Verification de l'emplacement de la section about
-        const about = document.querySelector('#About');
-        const posAbout = about.getBoundingClientRect();
+    else if (posAbout.bottom > 100 && isDisplayed.pathway && !isDisplayed.about) {
+        sidebar.style.backgroundColor = "var(--secondary-color)";
+        isDisplayed.about = true;
+        isDisplayed.pathway = false;
+    }
 
-        //Verification de l'emplacement de la section pathway
-        const pathway = document.querySelector('#pathway');
-        const posPathway = pathway.getBoundingClientRect();
-
-        //Verification de l'emplacement de la section skills
-        const skills = document.querySelector('#skills');
-        const posSkills = skills.getBoundingClientRect();
-
-        //J'affiche le menu si j'arrive à la section about, avec une couleur associée
-        if (posAbout.top < 100 && !isDisplayed.barOnTop || posAbout.top > 100 && isDisplayed.barOnTop) {
-            sidebar.classList.toggle("displaying");
-            sidebar.style.backgroundColor = "var(--secondary-color)";
-            isDisplayed.barOnTop = !isDisplayed.barOnTop;
-            isDisplayed.about = !isDisplayed.about;
+    else if ((posPathway.top < 100 && isDisplayed.about || posPathway.bottom > 100 && isDisplayed.skills) && !isDisplayed.pathway) {
+        if (isDisplayed.skills) {
+            isDisplayed.skills = false;
         }
+        else if (isDisplayed.about) {
+            isDisplayed.about = false;
+        }
+        ;
+        isDisplayed.pathway = true;
+        sidebar.style.backgroundColor = "green";
+    }
 
-        else if (posAbout.bottom > 100 && isDisplayed.pathway && !isDisplayed.about) {
-            sidebar.style.backgroundColor = "var(--secondary-color)";
-            isDisplayed.about = true;
+    else if ((posSkills.top < 100 && isDisplayed.pathway || posSkills.bottom > 100 && isDisplayed.contact) && !isDisplayed.skills) {
+        if (isDisplayed.pathway) {
             isDisplayed.pathway = false;
         }
+        else if (isDisplayed.contact) {
+            isDisplayed.contact = false;
+        }
+        ;
+        isDisplayed.skills = true;
+        sidebar.style.backgroundColor = "#c35450";
+    }
 
-        else if ((posPathway.top < 100 && isDisplayed.about || posPathway.bottom > 100 && isDisplayed.skills) && !isDisplayed.pathway) {
-            if (isDisplayed.skills) {
-                isDisplayed.skills = false;
-            }
-            else if (isDisplayed.about) {
-                isDisplayed.about = false;
-            }
-            ;
-            isDisplayed.pathway = true;
-            sidebar.style.backgroundColor = "green";
-        }
-        else if (posSkills.top < 100 && !isDisplayed.skills) {
-            isDisplayed.pathway = false;
-            isDisplayed.skills = true;
-            sidebar.style.backgroundColor = "#c35450";
-        }
+    else if ((posContact.top < 100 && isDisplayed.skills) && !isDisplayed.contact) {
+        isDisplayed.skills = false;
+        isDisplayed.contact = true;
+        sidebar.style.backgroundColor = "var(--secondary-color)";
     }
 }
 
 
 document.addEventListener('scroll', update);
 update();
+
 
 
 //// Cette fonction pour le formulaire ////
