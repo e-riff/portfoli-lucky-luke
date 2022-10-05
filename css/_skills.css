@@ -1,14 +1,7 @@
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;     
-*/
-
 #skills {
-    /*background-color:var(--secondary-color);*/
     background-color: #c35450;
     padding-top: 3rem;
-    box-sizing: border-box;
+    padding-bottom: 3rem;
 }
 
 .skills-header {
@@ -17,22 +10,26 @@
     list-style: none;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
     color: #f1ebc8;
+    margin-bottom: 3rem;
 }
 
 .skills-header-picto {
-    background-image: url(../pictures/sheriff.png);
+    background-image: url(../pictures/sheriff-white.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 20vh;
+    width: 20vw;
     height: 20vh;
-    margin-bottom: 1rem;
 }
 
-
 @media screen and (min-width: 768px) {
+
+    .skills-container {
+        background-color: #c35450;
+        height: calc(100vh - 3rem);
+    }
+
     .skills-header {
         display: flex;
         flex-direction: row;
@@ -82,7 +79,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 8vh;
+    width: 8vw;
     height: 8vh;
 }
 
@@ -93,6 +90,7 @@
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
     margin: 2rem;
+    list-style: none;
 }
 
 .soft-skills-details {
@@ -129,7 +127,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb(77, 67, 38) 0px 20px 30px -10px;
 }
 
 .skills-tools-title {
@@ -149,21 +147,17 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 8vh;
+    width: 8vw;
     height: 8vh;
 }
-
-.skills-details {
-    list-style: none;
-
-}
-
 
 @media screen and (min-width: 768px) {
     .skills-desktop {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         align-items: center;
+        justify-content: center;
         gap: 2rem;
     }
 
@@ -172,17 +166,15 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        width: 60vh;
-        height: 25vh;
-        filter: drop-shadow(0 0 0.75rem rgb(126, 124, 125));
+        height: 70%;
     }
 
     .skills-desktop-hard-skills {
-        box-shadow: 5px 0 5px -5px #333;
+        box-shadow: 5px 0 5px -5px #f1ebc8;
     }
 
     .skills-desktop-soft-skills {
-        box-shadow: 5px 0 5px -5px #333;
+        box-shadow: 5px 0 5px -5px #f1ebc8;
     }
 
 }
