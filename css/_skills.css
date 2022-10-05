@@ -1,7 +1,6 @@
 #skills {
-    background-color: #c35450;
+    background-color: var(--fourth-color);
     padding-top: 3rem;
-    padding-bottom: 3rem;
 }
 
 .skills-header {
@@ -26,8 +25,8 @@
 @media screen and (min-width: 768px) {
 
     .skills-container {
-        background-color: #c35450;
-        height: calc(100vh - 3rem);
+        background-color: var(--fourth-color);
+        min-height: calc(100vh - 3rem);
     }
 
     .skills-header {
@@ -39,19 +38,23 @@
     }
 
     .skills-header h2 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .skills-title h3 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .skills-tools-title h3 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .skills-details li {
-        font-size: 1rem;
+        font-size: 2rem;
+    }
+
+    .soft-skills-details li {
+        font-size: 2rem;
     }
 }
 

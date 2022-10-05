@@ -1,6 +1,6 @@
 section#home {
     margin-top: 3rem;
-    background-image: url("/pictures/Back_main_full.jpg");
+    background-image: url("/pictures/Back_main_full.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 3rem);
@@ -10,7 +10,7 @@ section#home {
 @media screen and (min-width: 768px) {
     section#home {
         margin-top: initial;
-        height: 100vh;
+        min-height: 100vh;
     }
 }
 

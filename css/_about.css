@@ -5,10 +5,9 @@
 }
 
 .about-container {
-
     display: flex;
     flex-direction: column;
-    height: calc(100- 3rem);
+    min-height: calc(100- 3rem);
 
 }
 
@@ -54,7 +53,7 @@
         align-items: center;
         justify-content: space-around;
         flex-direction: row-reverse;
-
+        min-height: calc(100-3rem);
     }
 
     .desktop_description {
@@ -62,7 +61,7 @@
         flex-direction: column;
         align-items: left;
         justify-content: left;
-        padding-right: 6rem;
+        padding-right: 1rem;
         padding-left: 3rem;
         max-width: 50%;
 
@@ -80,25 +79,24 @@
     }
 
     .desktop_description p {
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
         text-align: left;
     }
 
     .desktop_description h2 {
-        font-size: 3rem;
+        font-size: 4rem;
         padding-bottom: 2rem;
         padding-top: 2rem;
     }
 
-    div .friendLuckyLuke {
+    div.friendLuckyLuke {
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
-
     }
 
-    div .friendLuckyLuke img {
+    div.friendLuckyLuke img {
         width: 30%;
         height: 30%;
     }
