@@ -5,13 +5,9 @@
 
     #pathway {
         text-align: center;
-<<<<<<< HEAD
         background-color: var(--fiveth-color);
         padding-top:3rem;    
-=======
-        background-color: var(--secondary-color);
-        padding-top: 3rem;
->>>>>>> dev
+
     }
 
     /* .divider {
@@ -53,13 +49,8 @@
         background-repeat: no-repeat;
         width: 2.188rem;
         height: 2.188rem;
-<<<<<<< HEAD
-        margin-left: 12.5rem;
-        margin-top: 0.313rem; 
-=======
         margin-left: 10rem;
         margin-top: 0.313rem;
->>>>>>> dev
     }
 
     .timeline-panel {
@@ -76,13 +67,8 @@
         background-size: cover;
         background-size: contain;
         background-repeat: no-repeat;
-<<<<<<< HEAD
         height: 50vh;
         width: 50vh;
-        
-=======
-
->>>>>>> dev
     }
 
     .timeline-panel-container-inverted {
@@ -106,13 +92,8 @@
     }
 
     #pathway {
-<<<<<<< HEAD
         background-color: var(--fiveth-color);
         padding-top:3rem;    
-=======
-        background-color: var(--secondary-color);
-        padding-top: 3rem;
->>>>>>> dev
     }
 
     .timeline-desktop {
