@@ -1,61 +1,93 @@
 #contact {
-  box-sizing: border-box;
+min-height: calc(100vh - 6rem);
+border-style: dashed;
+border-color: var(--primary-color);
+border-width: thick;
+background-color: var(--secondary-color);
+}
+form {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  background-color: var(--secondary-color);
-  padding-top: 3rem;
-  border-width: thick;
-  border-color: #260407;
-  border-style: dashed;
-  /* padding-top au lieu de margon-top pour gérer la couleur de fond*/
+  justify-content: center;
+  align-items: center;
+}
+#contact h2 {
+    padding-top:3rem;
+  }
+
+
+@media screen and (min-width: 768px) {
+  form{
+flex-direction: row-reverse;
+  }
+  #contact div {
+    box-shadow: rgb(38, 57, 77) 0px 10px 10px -10px;
+  }
+  #contact h2 {
+    padding-top:3rem;
+  }
+ 
+}
+p.message {
+  border-radius: 4px;
+  font-style: italic;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
 }
 
-input {
+input[type=text],
+input[type=email],
+input[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
   display: inline-block;
-  width: 75%;
-  height: 20px;
-  margin-top: 15px;
-  margin-left: 3rem;
-  margin-right: 3rem;
-
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
+
+button {
+  width: 100%;
+  background-color: var(--fourth-color);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--third-color);
+}
+
+#contact div {
+  padding: 3rem;
+  width: clamp(20rem, 50%, 70rem);
+}
+
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 
 textarea {
-  display: inline-block;
-  width: 75%;
-  height: 80px;
-  margin-top: 20px;
-  margin-left: 3rem;
-  margin-right: 3rem;
-
-}
-
-input[type=submit] {
-  display: inline-block;
-  width: 25%;
-  height: 20px;
-  margin-top: 10px;
-  margin-left: 15rem;
-  margin-right: 3rem;
-  margin-bottom: 2rem;
-  background-color: #C35450;
-  color: aliceblue;
-}
-
-img.pictureTrain {
-  width: 250px;
+  width: 100%;
   height: 150px;
-  margin-left: 4rem;
-  /*margin-top: 3rem;*/
-
-}
-
-.reply {
-  text-align: start;
-}
-
-.contactform h2 {
-  text-decoration: underline;
-  margin-bottom: 2rem;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: none;
 }
