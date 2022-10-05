@@ -19,7 +19,13 @@
                 <img alt="rantanplan" src="/pictures/rantanplan.png">
                 <img alt="joedalton" src="/pictures/joe_dalton.png">
             </div>
+            
         </div>
 
     </div>
+    <div class="desktopfriendLL">
+                <img class="jolyjumper" alt="jolyjumper" src="/pictures/jolly-jumper.png">
+                <img alt="rantanplan" src="/pictures/rantanplan.png">
+                <img alt="joedalton" src="/pictures/joe_dalton.png">
+            </div>
 </section>
