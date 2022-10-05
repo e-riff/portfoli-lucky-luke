@@ -95,6 +95,7 @@
                                 <h4 class="text-muted-desktop">Agent d'escorte du pénitencier</h4>
                                 <div class="timeline-badge-desktop"></div> 
                             </div>
+                            
                             <div class="timeline-body-desktop">
                                 <div class="wrapper-desktop">
                                     <p>Transport des prisonniers</p>
