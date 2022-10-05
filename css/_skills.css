@@ -1,6 +1,7 @@
 #skills {
     background-color: var(--fourth-color);
     padding-top: 3rem;
+    min-height: calc(100vh - 6rem);
 }
 
 .skills-header {
@@ -26,7 +27,6 @@
 
     .skills-container {
         background-color: var(--fourth-color);
-        min-height: calc(100vh - 3rem);
     }
 
     .skills-header {
@@ -170,6 +170,7 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 70%;
+        width: 70%;
     }
 
     .skills-desktop-hard-skills {
