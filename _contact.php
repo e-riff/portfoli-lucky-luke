@@ -1,7 +1,6 @@
 <section id="contact">
   <section class="picturetrain">
     <img src="/pictures/trainvapeur.png">
-  </section>
 
   <form class="contactform">
     <h2>Telegramme</h2>
