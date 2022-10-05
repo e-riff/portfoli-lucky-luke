@@ -1,4 +1,8 @@
 #contact {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   background-color: var(--secondary-color);
   padding-top: 3rem;
   border-width: thick;

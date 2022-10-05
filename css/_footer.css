@@ -1,11 +1,12 @@
 
 footer{
-background-color:#D98162;
+background-color:#260407;
     height: 50px;
 }
 
 p{
     text-align: center;
+    color: #f1ebc8;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
