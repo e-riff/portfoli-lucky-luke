@@ -5,7 +5,7 @@
   </div>
 
 
-  <form action="./thanks.php" method="post">
+  <form action="./index.php#footer" method="post">
     <div class="coordonnees">
       <label for="name">Prénom :</label>
       <input type="text" id="fname" name="fname" placeholder="Joe" aria-label="nom" required>
@@ -20,5 +20,11 @@
       <button type="submit">Envoie ton telegramme !</button>
     </div>
   </form>
-  </form>
+
+
+  <?php
+  if (!empty($_POST)) :
+    include("_merci.php");
+  endif;
+  ?>
 </section>

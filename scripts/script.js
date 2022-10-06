@@ -13,8 +13,6 @@ const isDisplayed = {
     contact: false,
 };
 
-
-
 //// Cette fonction affiche le menu latéral au clic sur le burger ////
 burger.addEventListener('click', function () {
     sidebar.classList.toggle("displayingLeft");
@@ -28,6 +26,8 @@ sidebar.addEventListener('click', function () {
         isDisplayed.barOnSide = !isDisplayed.barOnSide;
     }
 });
+
+
 
 
 
