@@ -9,7 +9,7 @@
 #contact img {
   width: 50%;
   height: auto;
-  margin-left: auto;
+  margin-left: 25%;
 }
 
 @media screen and (min-width: 768px) {
@@ -124,4 +124,16 @@ button {
 
 button:hover {
   background-color: var(--third-color);
+}
+
+#contact div.merci,
+#contact ul,
+#contact li,
+#contact p,
+#contact h3 {
+  text-align: center;
+}
+
+#contact div.merci {
+  padding-bottom: 1rem;
 }
