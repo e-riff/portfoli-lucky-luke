@@ -123,12 +123,12 @@ let observer2 = new IntersectionObserver(function (entries) {
     if (entries[0]['isIntersecting'] === true && entries[0]['intersectionRatio'] > 0.20) {
         //console.log('Bulle2 affichée');
         bulle2.style.opacity = "1";
-        bulle2.style.marginRight = "12rem";
+        bulle2.style.marginLeft = "12rem";
     }
     else {
         //console.log('Bulle2 cachée');
         bulle2.style.opacity = "0";
-        bulle2.style.marginRight = "-3rem";
+        bulle2.style.marginLeft = "-3rem";
     }
 }, { threshold: [0, 0.20] });
 
@@ -149,12 +149,12 @@ let observer4 = new IntersectionObserver(function (entries) {
     if (entries[0]['isIntersecting'] === true && entries[0]['intersectionRatio'] > 0.20) {
         //console.log('Bulle4 affichée');
         bulle4.style.opacity = "1";
-        bulle4.style.marginRight = "12rem";
+        bulle4.style.marginLeft = "12rem";
     }
     else {
         //console.log('Bulle4 cachée');
         bulle4.style.opacity = "0";
-        bulle4.style.marginRight = "-3rem";
+        bulle4.style.marginLeft = "-3rem";
     }
 }, { threshold: [0, 0.20] });
 

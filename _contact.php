@@ -1,20 +1,24 @@
 <section id="contact">
-  <h2>Telegramme</h2>
-  
-<form action="./thanks.php" method="post">
-        <div class="coordonnees">
-            <label for="name">First Name :</label>
-            <input type="text" id="fname" name="fname" placeholder="Yoda">
-            <label for="name">Last Name :</label>
-            <input type="text" id="lname" name="lname" placeholder="Master">
-            <label for="mail">e-mail&nbsp;:</label>
-            <input type="email" id="mail" name="mail" placeholder="master-yoda@jedi-online.net">
-        </div> 
-        <div class="message">   
-            <label for="msg">Message :</label>
-            <textarea id="msg" name="message" placeholder="May the force be with you"></textarea>
-            <button type="submit">Envoie le paté !</button>
-        </div>
-    </form>
+  <div class="headerContact">
+    <h2>Telegramme</h2>
+    <img src="./pictures/trainvapeur.png" alt="Un joli train qui fume">
+  </div>
+
+
+  <form action="./thanks.php" method="post">
+    <div class="coordonnees">
+      <label for="name">Prénom :</label>
+      <input type="text" id="fname" name="fname" placeholder="Joe" aria-label="nom" required>
+      <label for="name">Nom :</label>
+      <input type="text" id="lname" name="lname" placeholder="Dalton" aria-label="prenom" required>
+      <label for="mail">e-mail&nbsp;:</label>
+      <input type="email" id="mail" name="mail" placeholder="joe-dalton@jail.com" aria-label="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}$">
+    </div>
+    <div class="message">
+      <label for="msg">Message :</label>
+      <textarea id="msg" name="message" maxlength=2000 placeholder="Echappé. STOP. Vais braquer une banque. STOP." aria-label="message" required></textarea>
+      <button type="submit">Envoie ton telegramme !</button>
+    </div>
+  </form>
   </form>
 </section>
