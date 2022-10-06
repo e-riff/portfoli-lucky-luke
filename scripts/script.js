@@ -14,6 +14,7 @@ const isDisplayed = {
 };
 
 
+
 //// Cette fonction affiche le menu latéral au clic sur le burger ////
 burger.addEventListener('click', function () {
     sidebar.classList.toggle("displayingLeft");
@@ -94,14 +95,78 @@ function update() {
     }
 }
 
-
 document.addEventListener('scroll', update);
 update();
 
 
 
+//// Cette fonction affiche les bulles ////
+const bulle1 = document.querySelector(".panel1");
+const bulle2 = document.querySelector(".panel2");
+const bulle3 = document.querySelector(".panel3");
+const bulle4 = document.querySelector(".panel4");
+
+let observer1 = new IntersectionObserver(function (entries) {
+    if (entries[0]['isIntersecting'] === true && entries[0]['intersectionRatio'] > 0.20) {
+        console.log('Bulle1 affichée');
+        bulle1.style.opacity = "1";
+        bulle1.style.marginLeft = "12rem";
+    }
+    else {
+        console.log('Bulle1 cachée');
+        bulle1.style.opacity = "0";
+        bulle1.style.marginLeft = "-3rem";
+    }
+}, { threshold: [0, 0.20] });
+
+let observer2 = new IntersectionObserver(function (entries) {
+    if (entries[0]['isIntersecting'] === true && entries[0]['intersectionRatio'] > 0.20) {
+        console.log('Bulle2 affichée');
+        bulle2.style.opacity = "1";
+        bulle2.style.marginRight = "12rem";
+    }
+    else {
+        console.log('Bulle2 cachée');
+        bulle2.style.opacity = "0";
+        bulle2.style.marginRight = "-3rem";
+    }
+}, { threshold: [0, 0.20] });
+
+let observer3 = new IntersectionObserver(function (entries) {
+    if (entries[0]['isIntersecting'] === true && entries[0]['intersectionRatio'] > 0.20) {
+        console.log('Bulle3 affichée');
+        bulle3.style.opacity = "1";
+        bulle3.style.marginLeft = "12rem";
+    }
+    else {
+        console.log('Bulle3 cachée');
+        bulle3.style.opacity = "0";
+        bulle3.style.marginLeft = "-3rem";
+    }
+}, { threshold: [0, 0.20] });
+
+let observer4 = new IntersectionObserver(function (entries) {
+    if (entries[0]['isIntersecting'] === true && entries[0]['intersectionRatio'] > 0.20) {
+        console.log('Bulle4 affichée');
+        bulle4.style.opacity = "1";
+        bulle4.style.marginRight = "12rem";
+    }
+    else {
+        console.log('Bulle4 cachée');
+        bulle4.style.opacity = "0";
+        bulle4.style.marginRight = "-3rem";
+    }
+}, { threshold: [0, 0.20] });
+
+
+observer1.observe(document.querySelector(".panel1"));
+observer2.observe(document.querySelector(".panel2"));
+observer3.observe(document.querySelector(".panel3"));
+observer4.observe(document.querySelector(".panel4"));
+
+
 //// Cette fonction pour le formulaire ////
-const contactForm = document.querySelector(".contactform");
+/* const contactForm = document.querySelector("#contactform");
 const name = document.querySelector("#name");
 
 contactForm.onsubmit = function (event) {
@@ -114,4 +179,4 @@ contactForm.onsubmit = function (event) {
     setTimeout(function () {
         newLine.remove();
     }, 3000);
-};
+}; */

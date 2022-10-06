@@ -57,13 +57,13 @@
     .timeline-panel {
         padding-top: 3.75rem;
         padding-bottom: 9.688rem;
-        margin-left: auto; 
+        margin-left: auto;
         margin-right: auto;
         text-align: center;
         justify-content: center;
         max-height: 100%;
         max-width: 100%;
-        
+
     }
 
     .timeline-panel-container {
@@ -75,7 +75,7 @@
         max-height: 50vh;
         max-width: 50vh;
         justify-content: center;
-        
+
     }
 
     .timeline-panel-container-inverted {
@@ -176,6 +176,7 @@
         margin-right: 12rem;
         margin-bottom: 4rem;
         background-color: var(--fourth-color);
+        opacity: 1;
     }
 
     .timeline-body-desktop {
@@ -196,6 +197,26 @@
         padding-top: 0.2rem;
         padding-bottom: 0rem;
         text-align: center;
+    }
+
+    .panel1 {
+        opacity: 0;
+        transition: 1.2s;
+    }
+
+    .panel2 {
+        opacity: 0;
+        transition: 1.2s;
+    }
+
+    .panel3 {
+        opacity: 0;
+        transition: 1.2s;
+    }
+
+    .panel4 {
+        opacity: 0;
+        transition: 1.2s;
     }
 
 }
