@@ -1,7 +1,9 @@
 /* Section About */
 #About {
     padding-top: 3rem;
+    padding-bottom: 3rem;
     background-color: var(--secondary-color);
+    min-height: calc(100vh);
 }
 
 .about-container {
@@ -45,10 +47,15 @@
 .friendLuckyLuke img {
     width: 25%;
     height: 25%;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 50%;
+    background-color: var(--fourth-color);
 }
 
 div.desktopfriendLL {
     display: none;
+    margin-top: 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -103,14 +110,21 @@ div.desktopfriendLL {
     div.desktopfriendLL {
         display: flex;
         justify-content: space-around;
-        height: 200px;
-        padding: 2rem;
+        height: 25vh;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 
     div.desktopfriendLL img {
         object-fit: contain;
         max-height: 100%;
         width: auto;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 50%;
+        background-color: var(--fourth-color);
 
     }
 

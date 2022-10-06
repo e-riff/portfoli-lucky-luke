@@ -1,7 +1,7 @@
 #skills {
     background-color: var(--fourth-color);
     padding-top: 3rem;
-    min-height: calc(100vh - 6rem);
+    min-height: 100vh;
 }
 
 .skills-header {

@@ -6,4 +6,6 @@
 footer p {
     text-align: center;
     color: #f1ebc8;
+    padding: 1rem;
+    font-size: 1rem;
 }

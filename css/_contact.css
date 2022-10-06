@@ -20,11 +20,12 @@
 @media screen and (min-width: 768px) {
   .headerContact {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
   }
 
   #contact img {
-    height: 5rem;
+    /*height: 5%;*/
     width: auto;
   }
 
@@ -34,6 +35,11 @@
     font-size: 4rem;
   }
 
+  form input,
+  button,
+  textarea {
+    font-size: 1.5rem;
+  }
 }
 
 form {
