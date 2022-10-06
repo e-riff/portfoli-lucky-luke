@@ -108,12 +108,12 @@ const bulle4 = document.querySelector(".panel4");
 
 let observer1 = new IntersectionObserver(function (entries) {
     if (entries[0]['isIntersecting'] === true && entries[0]['intersectionRatio'] > 0.20) {
-        console.log('Bulle1 affichée');
+        //console.log('Bulle1 affichée');
         bulle1.style.opacity = "1";
         bulle1.style.marginLeft = "12rem";
     }
     else {
-        console.log('Bulle1 cachée');
+        //console.log('Bulle1 cachée');
         bulle1.style.opacity = "0";
         bulle1.style.marginLeft = "-3rem";
     }
@@ -121,12 +121,12 @@ let observer1 = new IntersectionObserver(function (entries) {
 
 let observer2 = new IntersectionObserver(function (entries) {
     if (entries[0]['isIntersecting'] === true && entries[0]['intersectionRatio'] > 0.20) {
-        console.log('Bulle2 affichée');
+        //console.log('Bulle2 affichée');
         bulle2.style.opacity = "1";
         bulle2.style.marginRight = "12rem";
     }
     else {
-        console.log('Bulle2 cachée');
+        //console.log('Bulle2 cachée');
         bulle2.style.opacity = "0";
         bulle2.style.marginRight = "-3rem";
     }
@@ -134,12 +134,12 @@ let observer2 = new IntersectionObserver(function (entries) {
 
 let observer3 = new IntersectionObserver(function (entries) {
     if (entries[0]['isIntersecting'] === true && entries[0]['intersectionRatio'] > 0.20) {
-        console.log('Bulle3 affichée');
+        //console.log('Bulle3 affichée');
         bulle3.style.opacity = "1";
         bulle3.style.marginLeft = "12rem";
     }
     else {
-        console.log('Bulle3 cachée');
+        //console.log('Bulle3 cachée');
         bulle3.style.opacity = "0";
         bulle3.style.marginLeft = "-3rem";
     }
@@ -147,12 +147,12 @@ let observer3 = new IntersectionObserver(function (entries) {
 
 let observer4 = new IntersectionObserver(function (entries) {
     if (entries[0]['isIntersecting'] === true && entries[0]['intersectionRatio'] > 0.20) {
-        console.log('Bulle4 affichée');
+        //console.log('Bulle4 affichée');
         bulle4.style.opacity = "1";
         bulle4.style.marginRight = "12rem";
     }
     else {
-        console.log('Bulle4 cachée');
+        //console.log('Bulle4 cachée');
         bulle4.style.opacity = "0";
         bulle4.style.marginRight = "-3rem";
     }
