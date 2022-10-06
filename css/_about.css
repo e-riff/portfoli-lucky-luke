@@ -22,8 +22,6 @@
 }
 
 .desktop_description h2 {
-    font-size: 4rem;
-    line-height: 5rem;
     padding: 1.5rem;
     color: var(--third-color);
 }
