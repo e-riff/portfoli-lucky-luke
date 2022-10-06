@@ -23,7 +23,9 @@
 
 .desktop_description h2 {
     font-size: 2rem;
+    line-height: 5rem;
     padding: 1.5rem;
+    color: var(--third-color);
 }
 
 .desktop_description p {
@@ -96,7 +98,7 @@ div.desktopfriendLL {
 
     div.friendLuckyLuke {
         display: none;
-       
+
     }
 
 
@@ -106,6 +108,7 @@ div.desktopfriendLL {
         height: 200px;
         padding: 2rem;
     }
+
     div.desktopfriendLL img {
         object-fit: contain;
         max-height: 100%;
@@ -117,9 +120,4 @@ div.desktopfriendLL {
         animation: shake 0.5s;
         animation-iteration-count: infinite;
     }
-
-    /* div.friendLuckyLuke img {
-        width: 30%;
-        height: 30%;
-    }
-} */
+}

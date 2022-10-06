@@ -1,33 +1,41 @@
 #contact {
-min-height: calc(100vh - 6rem);
-border-style: dashed;
-border-color: var(--primary-color);
-border-width: thick;
-background-color: var(--secondary-color);
+  min-height: calc(100vh - 6rem);
+  border-style: dashed;
+  border-color: var(--primary-color);
+  border-width: thick;
+  background-color: var(--secondary-color);
 }
+
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 #contact h2 {
-    padding-top:3rem;
-  }
+  padding-top: 3rem;
+  color: var(--third-color);
+}
 
 
 @media screen and (min-width: 768px) {
-  form{
-flex-direction: row-reverse;
+  form {
+    flex-direction: row-reverse;
   }
+
   #contact div {
     box-shadow: rgb(38, 57, 77) 0px 10px 10px -10px;
   }
+
   #contact h2 {
-    padding-top:3rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
   }
- 
+
 }
+
 p.message {
   border-radius: 4px;
   font-style: italic;

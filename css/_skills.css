@@ -50,11 +50,11 @@
     }
 
     .skills-details li {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .soft-skills-details li {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -102,7 +102,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 1rem;
-    margin: 2rem;
+    margin: 2rem 2rem 0 2rem;
     padding-bottom: 2rem;
 }
 
