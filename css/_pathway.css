@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1330px) {
     #pathway .container-desktop {
         display: none;
     }
@@ -31,10 +31,9 @@
 
     #pathway ul {
         list-style: none;
-        text-align: center;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
@@ -66,14 +65,14 @@
 
     }
 
-    .timeline-panel-container {
+    .timeline-panel-container, 
+    .timeline-panel-container-inverted {
 
         background-image: url(/pictures/chat-balloon.png);
-        background-size: cover;
         background-size: contain;
         background-repeat: no-repeat;
         max-height: 50vh;
-        max-width: 50vh;
+        min-width: 410px ;
         justify-content: center;
 
     }
@@ -81,12 +80,7 @@
     .timeline-panel-container-inverted {
 
         background-image: url(/pictures/chat-balloon-inverted.png);
-        background-position: revert;
-        background-size: contain;
-        background-repeat: no-repeat;
-        max-height: 50vh;
-        max-width: 50vh;
-        justify-content: center;
+        min-width: 390px;
     }
 
     .timeline-body {
@@ -99,7 +93,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1330px) {
     #pathway .container {
         display: none;
     }
