@@ -65,14 +65,14 @@
 
     }
 
-    .timeline-panel-container, 
+    .timeline-panel-container,
     .timeline-panel-container-inverted {
 
         background-image: url(/pictures/chat-balloon.png);
         background-size: contain;
         background-repeat: no-repeat;
         max-height: 50vh;
-        min-width: 410px ;
+        min-width: 410px;
         justify-content: center;
 
     }
@@ -103,9 +103,10 @@
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
+
     #pathway h2 {
         font-size: 4rem;
-        color: var(--third-color);
+        color: var(--secondary-color);
     }
 
     #pathway h3 {

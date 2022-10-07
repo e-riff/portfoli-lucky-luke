@@ -1,5 +1,5 @@
 nav.topMenu {
-    background-color: var(--secondary-color);
+    background-color: var(--third-color);
     display: inline-flex;
     padding: 0.3rem;
     justify-content: space-between;
@@ -22,7 +22,7 @@ nav span {
     width: 33px;
     height: 4px;
     margin: 5px;
-    background: black;
+    background: var(--secondary-color);
     border-radius: 3px;
 }
 
@@ -46,6 +46,7 @@ sidebar {
     box-shadow: 2px 0px 4px 0 rgba(0, 0, 0, .2);
     z-index: 1;
     transition: 1s;
+    opacity: 0.95;
 }
 
 sidebar.displayingLeft {
