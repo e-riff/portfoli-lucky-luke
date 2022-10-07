@@ -141,14 +141,30 @@ button:hover {
   background-color: var(--third-color);
 }
 
-#contact div.merci,
-#contact ul,
-#contact li,
-#contact p,
-#contact h3 {
+.merci {
+  padding: 1rem;
+  border-radius: 5%;
+  background-color: var(--fourth-color);
+  margin: 3rem;
+  color: var(--secondary-color);
   text-align: center;
 }
 
-#contact div.merci {
-  padding-bottom: 1rem;
+.merci p {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.erreur {
+  padding: 2rem;
+  border-radius: 5%;
+  background-color: var(--third-color);
+  margin: 3rem;
+  color: var(--secondary-color);
+  text-align: center;
+
+}
+
+.erreur ul {
+  list-style: none;
 }
