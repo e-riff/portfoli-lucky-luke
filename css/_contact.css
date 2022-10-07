@@ -20,19 +20,21 @@
 @media screen and (min-width: 768px) {
   .headerContact {
     display: flex;
+    padding-top: 3rem;
     justify-content: space-around;
     align-items: center;
   }
 
   #contact img {
-    /*height: 5%;*/
-    width: auto;
+    width: 40%;
+    margin-left: initial;
   }
 
   #contact h2 {
-    padding-top: 3rem;
     color: var(--third-color);
     font-size: 4rem;
+    /*     font-size: clamp(2rem 4rem 100%);
+ */
   }
 
   form input,
