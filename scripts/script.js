@@ -1,6 +1,7 @@
 const burger = document.querySelector(".burger");
 const sidebar = document.querySelector("sidebar");
 const sidebarOnScreen = document.querySelector(".displaying");
+let mobileView = true;
 
 
 //// Flags de l'affichage des menus ////
@@ -49,49 +50,58 @@ function update() {
     //Verification de l'emplacement de la section contact
     const contact = document.querySelector('#contact');
     const posContact = contact.getBoundingClientRect();
-
-    //J'affiche le menu si j'arrive à la section about, avec une couleur associée
-    if (posAbout.top < 100 && !isDisplayed.barOnTop || posAbout.top > 100 && isDisplayed.barOnTop) {
-        sidebar.classList.toggle("displaying");
-        sidebar.style.backgroundColor = "var(--secondary-color)";
-        isDisplayed.barOnTop = !isDisplayed.barOnTop;
-        isDisplayed.about = !isDisplayed.about;
-    }
-
-    else if (posAbout.bottom > 100 && isDisplayed.pathway && !isDisplayed.about) {
-        sidebar.style.backgroundColor = "var(--secondary-color)";
-        isDisplayed.about = true;
-        isDisplayed.pathway = false;
-    }
-
-    else if ((posPathway.top < 100 && isDisplayed.about || posPathway.bottom > 100 && isDisplayed.skills) && !isDisplayed.pathway) {
-        if (isDisplayed.skills) {
-            isDisplayed.skills = false;
+    console.log(window.innerWidth);
+    if (window.innerWidth >= 768) {
+        if (mobileView == true) {
+            mobileView = false;
         }
-        else if (isDisplayed.about) {
-            isDisplayed.about = false;
+        //J'affiche le menu si j'arrive à la section about, avec une couleur associée
+        if (posAbout.top < 100 && !isDisplayed.barOnTop || posAbout.top > 100 && isDisplayed.barOnTop) {
+            sidebar.classList.toggle("displaying");
+            sidebar.style.backgroundColor = "var(--secondary-color)";
+            isDisplayed.barOnTop = !isDisplayed.barOnTop;
+            isDisplayed.about = !isDisplayed.about;
         }
-        ;
-        isDisplayed.pathway = true;
-        sidebar.style.backgroundColor = "var(--fiveth-color)";
-    }
 
-    else if ((posSkills.top < 100 && isDisplayed.pathway || posSkills.bottom > 100 && isDisplayed.contact) && !isDisplayed.skills) {
-        if (isDisplayed.pathway) {
+        else if (posAbout.bottom > 100 && isDisplayed.pathway && !isDisplayed.about) {
+            sidebar.style.backgroundColor = "var(--secondary-color)";
+            isDisplayed.about = true;
             isDisplayed.pathway = false;
         }
-        else if (isDisplayed.contact) {
-            isDisplayed.contact = false;
-        }
-        ;
-        isDisplayed.skills = true;
-        sidebar.style.backgroundColor = "var(--fourth-color)";
-    }
 
-    else if ((posContact.top < 100 && isDisplayed.skills) && !isDisplayed.contact) {
-        isDisplayed.skills = false;
-        isDisplayed.contact = true;
-        sidebar.style.backgroundColor = "var(--secondary-color)";
+        else if ((posPathway.top < 100 && isDisplayed.about || posPathway.bottom > 100 && isDisplayed.skills) && !isDisplayed.pathway) {
+            if (isDisplayed.skills) {
+                isDisplayed.skills = false;
+            }
+            else if (isDisplayed.about) {
+                isDisplayed.about = false;
+            }
+            ;
+            isDisplayed.pathway = true;
+            sidebar.style.backgroundColor = "var(--fiveth-color)";
+        }
+
+        else if ((posSkills.top < 100 && isDisplayed.pathway || posSkills.bottom > 100 && isDisplayed.contact) && !isDisplayed.skills) {
+            if (isDisplayed.pathway) {
+                isDisplayed.pathway = false;
+            }
+            else if (isDisplayed.contact) {
+                isDisplayed.contact = false;
+            }
+            ;
+            isDisplayed.skills = true;
+            sidebar.style.backgroundColor = "var(--fourth-color)";
+        }
+
+        else if ((posContact.top < 100 && isDisplayed.skills) && !isDisplayed.contact) {
+            isDisplayed.skills = false;
+            isDisplayed.contact = true;
+            sidebar.style.backgroundColor = "var(--secondary-color)";
+        }
+    }
+    else if (window.innerWidth < 768) {
+        sidebar.style.backgroundColor = "var(--third-color)";
+        mobileView = true;
     }
 }
 
