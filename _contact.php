@@ -8,7 +8,7 @@
   <form action="./index.php#footer" method="post">
     <div class="coordonnees">
       <label for="name">Prénom :</label>
-      <input type="text" id="fname" name="fname" placeholder="Joe" aria-label="nom" required>
+      <input type="text" id="fname" name="fname" placeholder="Joe" aria-label="nom">
       <label for="name">Nom :</label>
       <input type="text" id="lname" name="lname" placeholder="Dalton" aria-label="prenom" required>
       <label for="mail">e-mail&nbsp;:</label>
