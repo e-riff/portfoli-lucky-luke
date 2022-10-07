@@ -3,7 +3,6 @@ const sidebar = document.querySelector("sidebar");
 const sidebarOnScreen = document.querySelector(".displaying");
 let mobileView = true;
 
-
 //// Flags de l'affichage des menus ////
 const isDisplayed = {
     barOnTop: false,
@@ -29,9 +28,6 @@ sidebar.addEventListener('click', function () {
 });
 
 
-
-
-
 //// Cette fonction affiche (ou non) le menu du haut, et met à jour la couleur ////
 function update() {
 
@@ -50,7 +46,8 @@ function update() {
     //Verification de l'emplacement de la section contact
     const contact = document.querySelector('#contact');
     const posContact = contact.getBoundingClientRect();
-    console.log(window.innerWidth);
+
+
     if (window.innerWidth >= 768) {
         if (mobileView == true) {
             mobileView = false;
