@@ -51,6 +51,34 @@ function update() {
     if (window.innerWidth >= 768) {
         if (mobileView == true) {
             mobileView = false;
+            /*            isDisplayed.barOnTop = false;
+                        isDisplayed.barOnSide = false;
+                        isDisplayed.about = false;
+                        isDisplayed.pathway = false;
+                        isDisplayed.skills = false;
+                        isDisplayed.contact = false;
+            
+                        if (posContact.top <= 10) {
+                            sidebar.style.backgroundColor = "var(--secondary-color)";
+                            isDisplayed.contact = true;
+                        }
+                        else if (posSkills.top <= 10) {
+                            sidebar.style.backgroundColor = "var(--fiveth-color)";
+                            isDisplayed.skills = true;
+                        }
+                        else if (posPathway.top <= 10) {
+                            sidebar.style.backgroundColor = "var(--fiveth-color)";
+                            isDisplayed.pathway = true;
+                        }
+                        else if (posAbout.top <= 10) {
+                            sidebar.style.backgroundColor = "var(--secondary-color)";
+                            isDisplayed.about = true;
+                        }
+                        else if ()
+                            sidebar.classList.toggle("displaying");
+                    }
+                    */
+
         }
         //J'affiche le menu si j'arrive à la section about, avec une couleur associée
         if (posAbout.top < 100 && !isDisplayed.barOnTop || posAbout.top > 100 && isDisplayed.barOnTop) {
@@ -96,6 +124,7 @@ function update() {
             sidebar.style.backgroundColor = "var(--secondary-color)";
         }
     }
+
     else if (window.innerWidth < 768) {
         sidebar.style.backgroundColor = "var(--third-color)";
         mobileView = true;
