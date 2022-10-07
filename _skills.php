@@ -26,9 +26,9 @@
                         <li> Tireur d'élite</li>
                         <li> Cavalier hors-pair </li>
                         <li> Excellent marcheur </li>
-                        <li> hard skill 4 </li>
-                        <li> hard skill 5 </li>
-                        <li> hard skill 6 </li>
+                        <li> Oeil de lynx </li>
+                        <li> Souplesse incroyable </li>
+                        <li> Rapidité proche de la vitesse de la lumière </li>
                     </ul>
                 </div>
                 <div class="skills-desktop-hard-tools">
