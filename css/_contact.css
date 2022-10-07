@@ -26,15 +26,17 @@
   }
 
   #contact img {
-    width: 40%;
+    max-width: 40%;
+    max-height: 400px;
+    height: auto;
+    object-fit: contain;
     margin-left: initial;
   }
 
   #contact h2 {
     color: var(--third-color);
     font-size: 4rem;
-    /*     font-size: clamp(2rem 4rem 100%);
- */
+    flex-basis: content;
   }
 
   form input,
@@ -60,7 +62,7 @@ form {
 }
 
 #contact form div {
-  width: clamp(10rem, 70vw, 100rem);
+  width: clamp(10rem, 70vw, 50%);
 }
 
 @media screen and (min-width: 768px) {
