@@ -37,4 +37,5 @@ body {
 
 h1 {
     font-family: "Lucky-Luke";
+    text-shadow: black 0.2rem 0.2rem 0.2rem;
 }
