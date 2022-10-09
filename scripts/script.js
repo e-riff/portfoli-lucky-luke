@@ -1,16 +1,13 @@
 const burger = document.querySelector(".burger");
 const sidebar = document.querySelector("sidebar");
 const sidebarOnScreen = document.querySelector(".displaying");
-let mobileView = true;
 
-//// Flags de l'affichage des menus ////
+//// Flags des affichages ////
 const isDisplayed = {
     barOnTop: false,
+    barOntopPrev: false,
     barOnSide: false,
-    about: false,
-    pathway: false,
-    skills: false,
-    contact: false,
+    mobileView: true,
 };
 
 //// Cette fonction affiche le menu latéral au clic sur le burger ////
@@ -47,39 +44,40 @@ function update() {
     const contact = document.querySelector('#contact');
     const posContact = contact.getBoundingClientRect();
 
-
+    // Si on est en plein écran...
     if (window.innerWidth >= 768) {
-        if (mobileView == true) {
-            mobileView = false;
-            /*            isDisplayed.barOnTop = false;
-                        isDisplayed.barOnSide = false;
-                        isDisplayed.about = false;
-                        isDisplayed.pathway = false;
-                        isDisplayed.skills = false;
-                        isDisplayed.contact = false;
-            
-                        if (posContact.top <= 10) {
-                            sidebar.style.backgroundColor = "var(--secondary-color)";
-                            isDisplayed.contact = true;
-                        }
-                        else if (posSkills.top <= 10) {
-                            sidebar.style.backgroundColor = "var(--fiveth-color)";
-                            isDisplayed.skills = true;
-                        }
-                        else if (posPathway.top <= 10) {
-                            sidebar.style.backgroundColor = "var(--fiveth-color)";
-                            isDisplayed.pathway = true;
-                        }
-                        else if (posAbout.top <= 10) {
-                            sidebar.style.backgroundColor = "var(--secondary-color)";
-                            isDisplayed.about = true;
-                        }
-                        else if ()
-                            sidebar.classList.toggle("displaying");
-                    }
-                    */
-
+        if (isDisplayed.mobileView == true) {
+            isDisplayed.mobileView = false;
         }
+
+        if (posAbout.top < 100 && !isDisplayed.barOnTop || posAbout.top > 100 && isDisplayed.barOnTop) {
+            sidebar.classList.toggle("displaying");
+            isDisplayed.barOnTop = !isDisplayed.barOnTop;
+        }
+        if (isDisplayed.barOnTop) {
+            if (posContact.top <= 50) {
+                sidebar.style.backgroundColor = "var(--secondary-color)";
+            }
+            else if (posSkills.top <= 10) {
+                sidebar.style.backgroundColor = "var(--fourth-color)";
+            }
+            else if (posPathway.top <= 10) {
+                sidebar.style.backgroundColor = "var(--fiveth-color)";
+            }
+            else if (posAbout.top <= 10) {
+                sidebar.style.backgroundColor = "var(--secondary-color)";
+            }
+        }
+    }
+
+    //Si on est en petit écran et qu'on ne l'était pas avant
+    else if (!isDisplayed.mobileView) {
+        sidebar.style.backgroundColor = "var(--third-color)";
+        isDisplayed.mobileView = true;
+    }
+}
+
+/* 
         //J'affiche le menu si j'arrive à la section about, avec une couleur associée
         if (posAbout.top < 100 && !isDisplayed.barOnTop || posAbout.top > 100 && isDisplayed.barOnTop) {
             sidebar.classList.toggle("displaying");
@@ -87,13 +85,13 @@ function update() {
             isDisplayed.barOnTop = !isDisplayed.barOnTop;
             isDisplayed.about = !isDisplayed.about;
         }
-
+ 
         else if (posAbout.bottom > 100 && isDisplayed.pathway && !isDisplayed.about) {
             sidebar.style.backgroundColor = "var(--secondary-color)";
             isDisplayed.about = true;
             isDisplayed.pathway = false;
         }
-
+ 
         else if ((posPathway.top < 100 && isDisplayed.about || posPathway.bottom > 100 && isDisplayed.skills) && !isDisplayed.pathway) {
             if (isDisplayed.skills) {
                 isDisplayed.skills = false;
@@ -105,7 +103,7 @@ function update() {
             isDisplayed.pathway = true;
             sidebar.style.backgroundColor = "var(--fiveth-color)";
         }
-
+ 
         else if ((posSkills.top < 100 && isDisplayed.pathway || posSkills.bottom > 100 && isDisplayed.contact) && !isDisplayed.skills) {
             if (isDisplayed.pathway) {
                 isDisplayed.pathway = false;
@@ -117,20 +115,18 @@ function update() {
             isDisplayed.skills = true;
             sidebar.style.backgroundColor = "var(--fourth-color)";
         }
-
+ 
         else if ((posContact.top < 100 && isDisplayed.skills) && !isDisplayed.contact) {
             isDisplayed.skills = false;
             isDisplayed.contact = true;
             sidebar.style.backgroundColor = "var(--secondary-color)";
         }
     }
+ 
 
-    else if (window.innerWidth < 768) {
-        sidebar.style.backgroundColor = "var(--third-color)";
-        mobileView = true;
-    }
-}
+*/
 
+document.addEventListener('resize', update);
 document.addEventListener('scroll', update);
 update();
 
@@ -199,20 +195,3 @@ observer1.observe(document.querySelector(".panel1"));
 observer2.observe(document.querySelector(".panel2"));
 observer3.observe(document.querySelector(".panel3"));
 observer4.observe(document.querySelector(".panel4"));
-
-
-//// Cette fonction pour le formulaire ////
-/* const contactForm = document.querySelector("#contactform");
-const name = document.querySelector("#name");
-
-contactForm.onsubmit = function (event) {
-    event.preventDefault();
-    const newLine = document.createElement('p');
-    contactForm.appendChild(newLine);
-    newLine.innerHTML = `Bonjour ${name.value}, votre message a bien été envoyé! `;
-    newLine.classList.add("reply");
-
-    setTimeout(function () {
-        newLine.remove();
-    }, 3000);
-}; */
